@@ -1,5 +1,7 @@
 l_english:
  VICTORY_POINTS_6521:0 "Berlin"
+ VICTORY_POINTS_197:0 "Salla"
+VICTORY_POINTS_919:0 "Amasya"
  VICTORY_POINTS_692:0 "Munich"
  GER_VICTORY_POINTS_692: "München"
  BAY_VICTORY_POINTS_692: "Minga"
@@ -1852,6 +1854,7 @@ l_english:
  VICTORY_POINTS_12774: "Gwadar"
  VICTORY_POINTS_10898: "Harappa"
  VICTORY_POINTS_10173: "Rawalpindi"
+
 
 
 
