@@ -1,0 +1,104 @@
+{
+  "capital": 615,
+  "oob": "SHX_1936",
+  "set_stability": 0.7,
+  "set_war_support": 0.4,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "SHX_yan_xishan",
+    "SHX_wang_jingguo",
+    "SHX_zhang_shen",
+    "SHX_luo_zhao",
+    "SHX_liao_ting",
+    "SHX_cheng_zhao",
+    "SHX_ma_tian",
+    "SHX_zhu_ting",
+    "SHX_wang_li_sun",
+    "SHX_min_lan_tung_tin",
+    "SHX_tan_fang",
+    "SHX_huang_peng",
+    "SHX_peng_dong",
+    "SHX_kong_fang",
+    "SHX_yang_lu",
+    "SHX_sun_li",
+    "SHX_wang_zuanxu",
+    "SHX_fu_zuoyi",
+    "SHX_qu_yangke"
+  ],
+  "if": {
+    "limit": {
+      "has_dlc": "Waking the Tiger"
+    },
+    "add_ideas": [
+      "PRC_government_corruption",
+      "CHI_ineffective_bureaucracy_warlord",
+      "CHI_warlord_state_idea"
+    ]
+  },
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": {
+      "limit": {
+        "has_dlc": "Waking the Tiger"
+      },
+      "else": {
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "naval_effort",
+          "flexible_navy",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    },
+    "add_ideas": [
+      "tot_economic_mobilisation",
+      "service_by_requirement",
+      "closed_economy"
+    ],
+    "set_technology": {
+      "air_superiority": 1,
+      "mass_assault": 1,
+      "pocket_defence": 1,
+      "defence_in_depth": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_encryption": 1,
+      "basic_decryption": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "construction3": 1,
+      "concentrated_industry": 1,
+      "concentrated_industry2": 1,
+      "concentrated_industry3": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 100
+  }
+}

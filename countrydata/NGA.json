@@ -1,0 +1,80 @@
+{
+  "capital": 558,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "set_convoys": 20,
+  "recruit_character": [
+    "NGA_ncs",
+    "NGA_pot",
+    "NGA_nccr",
+    "NGA_fascist_guy",
+    "NGA_coi",
+    "NGA_ai2",
+    "NGA_democratic_guy",
+    "NGA_ar",
+    "NGA_acgs",
+    "NGA_awt",
+    "NGA_acd2",
+    "NGA_nt",
+    "NGA_aco2",
+    "NGA_acas",
+    "NGA_acr",
+    "NGA_mt",
+    "NGA_stc",
+    "NGA_aa2",
+    "NGA_ncm",
+    "NGA_communist_guy"
+  ],
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "large_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "tech_support": 1,
+      "tech_recon": 1,
+      "support_weapons": 1,
+      "gw_artillery": 1,
+      "air_superiority": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 25,
+    "fascism": 20,
+    "communism": 5,
+    "neutrality": 50
+  }
+}

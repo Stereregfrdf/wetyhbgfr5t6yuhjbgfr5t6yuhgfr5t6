@@ -1,0 +1,73 @@
+{
+  "capital": 611,
+  "oob": "MEN_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "MEN_prince_demchugdongrub",
+    "MEN_sonin_xiangying",
+    "MEN_zhao_zhanshan",
+    "MEN_songgotu_shangzhi",
+    "MEN_hesehn_tiemei",
+    "MEN_guan_xingde",
+    "MEN_kyoiji_tomonaga",
+    "MEN_deng_linge",
+    "MEN_hung_zhehuang",
+    "MEN_nakajima_kesago",
+    "MEN_yonimitsu_kasahara",
+    "MEN_nalan_kang_an",
+    "MEN_songgotu_zhanshan",
+    "MEN_megata_toshiro"
+  ],
+  "1939.1.1": {
+    "add_to_war": {
+      "targeted_alliance": "JAP",
+      "enemy": "CHI",
+      "hostility_reason": "puppet"
+    },
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "oob": "MEN_1939",
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "fascism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 80,
+    "neutrality": 20
+  }
+}

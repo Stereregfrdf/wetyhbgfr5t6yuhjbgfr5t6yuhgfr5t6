@@ -1,0 +1,89 @@
+{
+  "capital": 330,
+  "oob": "MON_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "add_ideas": [
+    "limited_conscription"
+  ],
+  "recruit_character": [
+    "MON_anandyn_amar",
+    "MON_mingzhu_zhanshan",
+    "MON_fu_shangzhi",
+    "MON_songgotu_kangan",
+    "MON_haidav",
+    "MON_dagva",
+    "MON_chimid",
+    "MON_sukhbaataryn_yanjmaa",
+    "MON_ganbaatar",
+    "MON_ulanhu",
+    "MON_vg_pyrselov",
+    "MON_lee_shou_hsin",
+    "MON_buyannmeh",
+    "MON_horloogiyn_choybalsan",
+    "MON_olziytrygyn_badrak",
+    "MON_dashdorj",
+    "MON_gomgchigryn_bumtsend",
+    "MON_dansrabilegyin_dogsam",
+    "MON_yundunwangcug",
+    "MON_pai_yun_ti"
+  ],
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "construction_effort_2",
+        "production_effort_2",
+        "infrastructure_effort",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "oob": "MON_1939",
+      "set_technology": {
+        "support_weapons": 1,
+        "gw_artillery": 1,
+        "air_superiority": 1,
+        "mass_assault": 1,
+        "pocket_defence": 1,
+        "defence_in_depth": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "concentrated_industry": 1,
+        "concentrated_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "add_ideas": [
+        "limited_conscription"
+      ],
+      "recruit_character": "MON_khorloogiin_choibalsan",
+      "promote_character": "MON_khorloogiin_choibalsan",
+      "retire_character": "MON_anandyn_amar"
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "communism": 100
+  }
+}

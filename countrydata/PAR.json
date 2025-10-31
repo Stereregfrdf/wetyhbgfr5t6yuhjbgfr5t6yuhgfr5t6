@@ -1,0 +1,249 @@
+{
+  "capital": 301,
+  "oob": "PAR_1936",
+  "every_core_state": {
+    "ROOT": {
+      "add_to_array": {
+        "cores_at_game_start": "PREV"
+      }
+    }
+  },
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "PAR_1936_air_bba",
+      "ELSE": {
+        "set_air_oob": "PAR_1936_air_legacy",
+        "set_technology": {
+          "early_fighter": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Trial of Allegiance"
+      },
+      "add_timed_idea": {
+        "idea": "BOL_toll_of_the_chaco_war",
+        "days": 1400
+      },
+      "JUNO_set_shared_military_branch_defaults": true
+    },
+    {
+      "limit": {
+        "has_dlc": "Trial of Allegiance"
+      },
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1936.1.1",
+        "election_frequency": 48,
+        "elections_allowed": true
+      },
+      "set_popularities": {
+        "democratic": 55,
+        "communism": 30,
+        "neutrality": 10,
+        "fascism": 5
+      },
+      "add_timed_idea": {
+        "idea": "idea_PAR_the_aftershock_of_the_tripple_alliance",
+        "days": 1780
+      },
+      "every_core_state": {
+        "add_dynamic_modifier": {
+          "modifier": "idea_PAR_river_navy"
+        }
+      },
+      "recruit_character": [
+        "PAR_ivan_belyaev",
+        "PAR_rafael_franco",
+        "PAR_higinio_morinigo",
+        "PAR_manuel_t_aponte",
+        "PAR_juan_stefanich",
+        "PAR_juan_manuel_frutos",
+        "PAR_isaias_baez_allende",
+        "PAR_alfred_stroessner_matiauda",
+        "PAR_amancio_pampliega",
+        "PAR_juan_natalicio_gonzalez",
+        "PAR_remigio_bastia_martin",
+        "PAR_francisco_esculies",
+        "PAR_riccardo_odriosola",
+        "PAR_Jose_Felix_Estigarribia",
+        "PAR_Eusebio_Ayala",
+        "PAR_eduardo_schaerer",
+        "PAR_arturo_javier_gonzalez",
+        "PAR_finance_graduate",
+        "PAR_fortification_armchair_general",
+        "PAR_aristides_rivas_ortellado",
+        "PAR_freire_gomez_esteves",
+        "PAR_ramon_paredes",
+        "PAR_mutshuito_villasboa_barboza",
+        "PAR_emilio_gardel",
+        "PAR_anselmo_jover_peralta",
+        "PAR_bernardino_caballero",
+        "PAR_pedro_duarte_ortellado",
+        "PAR_felipe_molas_lopez",
+        "PAR_tomas_salomoni",
+        "PAR_justo_pastor_benitez",
+        "PAR_damian_bruyn",
+        "PAR_higenio_morinigo_martinez"
+      ],
+      "ELSE": {
+        "set_politics": {
+          "ruling_party": "communism",
+          "last_election": "1936.1.1",
+          "election_frequency": 48,
+          "elections_allowed": true
+        },
+        "set_popularities": {
+          "democratic": 25,
+          "communism": 75
+        },
+        "recruit_character": [
+          "PAR_rafael_franco",
+          "PAR_emilio_melgarejo",
+          "PAR_francisco_daza",
+          "PAR_manuel_de_la_cruz",
+          "PAR_manuel_t_aponte",
+          "PAR_hector_velasquez",
+          "PAR_jesus_g_arraza",
+          "PAR_juan_stefanich",
+          "PAR_juan_manuel_frutos",
+          "PAR_isaias_baez_allende",
+          "PAR_vicente_almonacid",
+          "PAR_alfred_stroessner_matiauda",
+          "PAR_amancio_pampliega",
+          "PAR_hernan_rojas_baltassare",
+          "PAR_higenio_morinigo_martinez",
+          "PAR_juan_natalicio_gonzalez",
+          "PAR_remigio_bastia_martin",
+          "PAR_francisco_esculies",
+          "PAR_riccardo_odriosola"
+        ]
+      }
+    }
+  ],
+  "set_research_slots": 2,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_support": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1
+  },
+  "set_stability": 0.26,
+  "set_country_flag": "monroe_doctrine",
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": [
+      {
+        "limit": {
+          "has_dlc": "Trial of Allegiance"
+        },
+        "complete_national_focus": [
+          "PAR_fedrerista_land_reforms",
+          "PAR_ban_vouchers",
+          "PAR_allow_unions_to_strike",
+          "PAR_allow_women_workers",
+          "PAR_central_bank_of_paraguay",
+          "PAR_a_great_charter",
+          "PAR_invite_japanese_settlers",
+          "PAR_military_pensions",
+          "PAR_chaco_war_decoration",
+          "GUAY_laissez_faire",
+          "GUAY_land_reforms",
+          "GUAY_workers_rights",
+          "PAR_urbanization",
+          "PAR_order_italian_planes",
+          "GUAY_agricultural_colonization",
+          "GUAY_beef_and_hide_industry",
+          "GUAY_wool_makers",
+          "GUAY_heavy_industry",
+          "GUAY_the_tag_economic_miracle",
+          "GUAY_exploit_mineral_wealth"
+        ]
+      },
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Trial of Allegiance"
+          }
+        },
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "construction_effort_2",
+          "production_effort_2",
+          "infrastructure_effort",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    ],
+    "oob": "PAR_1939",
+    "IF": [
+      {
+        "limit": {
+          "has_dlc": "By Blood Alone"
+        },
+        "set_air_oob": "PAR_1939_air_bba",
+        "ELSE": {
+          "set_air_oob": "PAR_1939_air_legacy",
+          "set_technology": {
+            "CAS1": 1
+          }
+        }
+      },
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Trial of Allegiance"
+          }
+        },
+        "recruit_character": "PAR_higinio_morinigo",
+        "promote_character": "PAR_higinio_morinigo",
+        "retire_character": "PAR_manuel_de_la_cruz"
+      }
+    ],
+    "set_technology": {
+      "interwar_artillery": 1,
+      "interwar_antiair": 1,
+      "infantry_weapons1": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "air_superiority": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    },
+    "set_politics": {
+      "ruling_party": "communism",
+      "last_election": "1938.1.1",
+      "election_frequency": 48,
+      "elections_allowed": false
+    },
+    "set_popularities": {
+      "democratic": 20,
+      "communism": 30,
+      "neutrality": 50
+    }
+  }
+}

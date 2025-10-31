@@ -1,0 +1,46 @@
+{
+  "capital": 44,
+  "OOB": "ALB_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1,
+    "tech_support": 1,
+    "tech_recon": 1
+  },
+  "recruit_character": [
+    "ALB_king_zog",
+    "ALB_enver_hoxha",
+    "ALB_xhemal_aranitasi",
+    "ALB_eqrem_belishi",
+    "ALB_tefik_mborja",
+    "ALB_halil_nergutti",
+    "ALB_ismael_ghaxa",
+    "ALB_hajre_fetahu",
+    "ALB_xhelal_mitrovica",
+    "ALB_selim_moishiou",
+    "ALB_kol_bibe_mirakaj",
+    "ALB_qemal_komani",
+    "ALB_prenk_pervizi",
+    "ALB_alexander_mori",
+    "ALB_aziz_sulejmani",
+    "ALB_kristo_cajupi",
+    "ALB_eqrem_libohova",
+    "ALB_zuhdi_shabani",
+    "ALB_rexhep_mitrovica",
+    "ALB_hasan_begolli",
+    "ALB_fiqri_dine",
+    "ALB_midhat_frasheri",
+    "ALB_jocelyn_percy",
+    "ALB_wilhelm_of_wied"
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1933.3.5",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 100
+  },
+  "set_convoys": 5
+}

@@ -1,0 +1,79 @@
+{
+  "capital": 658,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "IF": {
+    "limit": {
+      "has_dlc": "Battle for the Bosporus"
+    },
+    "set_technology": {
+      "camelry": 1
+    }
+  },
+  "set_convoys": 5,
+  "recruit_character": [
+    "UAE_stc",
+    "UAE_aco2",
+    "UAE_aa2",
+    "UAE_ncs",
+    "UAE_nt",
+    "UAE_acas",
+    "UAE_acd2",
+    "UAE_democratic_guy",
+    "UAE_mt",
+    "UAE_ai2",
+    "UAE_coi",
+    "UAE_acr",
+    "UAE_pot",
+    "UAE_awt",
+    "UAE_communist_guy",
+    "UAE_ncm",
+    "UAE_acgs",
+    "UAE_nccr",
+    "UAE_fascist_guy",
+    "UAE_ar"
+  ],
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 50,
+    "fascism": 0,
+    "communism": 1,
+    "neutrality": 49
+  }
+}

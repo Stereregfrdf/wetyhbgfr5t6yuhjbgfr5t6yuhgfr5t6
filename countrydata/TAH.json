@@ -1,0 +1,79 @@
+{
+  "capital": 641,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "set_convoys": 20,
+  "recruit_character": [
+    "TAH_pot",
+    "TAH_awt",
+    "TAH_communist_guy",
+    "TAH_ncm",
+    "TAH_acgs",
+    "TAH_nccr",
+    "TAH_fascist_guy",
+    "TAH_ar",
+    "TAH_stc",
+    "TAH_aco2",
+    "TAH_aa2",
+    "TAH_ncs",
+    "TAH_nt",
+    "TAH_acas",
+    "TAH_acd2",
+    "TAH_democratic_guy",
+    "TAH_mt",
+    "TAH_ai2",
+    "TAH_coi",
+    "TAH_acr"
+  ],
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 38,
+    "fascism": 6,
+    "communism": 6,
+    "neutrality": 50
+  },
+  "create_country_leader": {
+    "name": "Teri'i-nui-o-Tahiti a Pomare",
+    "desc": "",
+    "picture": "GFX_portrait_Terii_nui_o_Tahiti_a_Pomare",
+    "ideology": "despotism",
+    "female": true,
+    "traits": []
+  }
+}

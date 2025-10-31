@@ -1,0 +1,81 @@
+{
+  "capital": 318,
+  "oob": "HAI_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "HAI_sténio_vincent",
+    "HAI_jacques_roumain",
+    "HAI_vilbrum_soulouque",
+    "HAI_jacques_soulouque",
+    "HAI_emilie_lescot",
+    "HAI_pascale_b_g_guillaume",
+    "HAI_charles_h_forbin",
+    "HAI_andre_sainte_frederic",
+    "HAI_paul_magloire",
+    "HAI_georges_leger",
+    "HAI_belmeau_max_pierre",
+    "HAI_franck_lavaud",
+    "HAI_andre_dumont",
+    "HAI_antoine_levelt",
+    "HAI_ernst_severe",
+    "HAI_g_edouard_roy",
+    "HAI_raymond_gassner",
+    "HAI_luis_dabtes_bellegarde",
+    "HAI_demosthenes_calixte",
+    "HAI_louis_dejoie"
+  ],
+  "set_country_flag": "monroe_doctrine",
+  "set_war_support": 0.1,
+  "set_convoys": 5,
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "oob": "HAI_1939",
+    "set_technology": {
+      "infantry_weapons1": 1,
+      "air_superiority": 1,
+      "mass_assault": 1,
+      "pocket_defence": 1,
+      "defence_in_depth": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": 100
+  }
+}

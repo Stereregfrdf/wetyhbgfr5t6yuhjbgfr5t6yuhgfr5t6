@@ -1,0 +1,628 @@
+{
+  "capital": 48,
+  "oob": "BUL_1936",
+  "if": [
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "BUL_1936_air_bba",
+      "else": {
+        "set_air_oob": "BUL_1936_air_legacy"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Battle for the Bosporus"
+      },
+      "set_party_name": {
+        "ideology": "democratic",
+        "name": "BUL_democratic_party_bftb",
+        "long_name": "BUL_democratic_party_bftb_bulgarian_long"
+      },
+      "set_cosmetic_tag": "BUL_neutrality",
+      "if": [
+        {
+          "limit": {
+            "has_dlc": "Arms Against Tyranny"
+          },
+          "add_ideas": "BUL_army_restrictions_aat"
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Arms Against Tyranny"
+            }
+          },
+          "add_ideas": "BUL_army_restrictions"
+        },
+        {
+          "limit": {
+            "has_dlc": "La Resistance"
+          },
+          "create_operative_leader": {
+            "name": "Vladimir Zaimov",
+            "GFX": "GFX_portrait_bul_vladimir_zaimov",
+            "traits": [
+              "operative_infiltrator",
+              "operative_commando"
+            ],
+            "bypass_recruitment": false,
+            "available_to_spy_master": true,
+            "nationalities": [
+              "BUL"
+            ]
+          },
+          "recruit_character": "BUL_stefan_nedev"
+        }
+      ],
+      "add_ideas": [
+        "BUL_second_national_catastrophe",
+        "BUL_imro_01",
+        "volunteer_only"
+      ],
+      "set_rule": {
+        "can_not_declare_war": true
+      },
+      "country_lock_all_division_template": true,
+      "set_country_flag": "BUL_factions_unlocked_flag",
+      "set_variable": [
+        {
+          "BUL_zveno_loyalty": 15
+        },
+        {
+          "BUL_zveno_popularity": 50
+        },
+        {
+          "BUL_bs_loyalty": 25
+        },
+        {
+          "BUL_bs_popularity": 60
+        },
+        {
+          "BUL_bzns_loyalty": 30
+        },
+        {
+          "BUL_bzns_popularity": 70
+        },
+        {
+          "BUL_nsm_loyalty": 60
+        },
+        {
+          "BUL_nsm_popularity": 40
+        },
+        {
+          "BUL_faction_interaction_cost_standard": 20
+        },
+        {
+          "BUL_broad_socialist_opression_cost_standard": 20
+        },
+        {
+          "BUL_faction_days_remove_very_low": 7
+        },
+        {
+          "BUL_faction_days_remove_low": 14
+        },
+        {
+          "BUL_faction_days_remove_medium": 21
+        },
+        {
+          "BUL_faction_days_remove_high": 30
+        },
+        {
+          "BUL_faction_days_remove_very_high": 60
+        },
+        {
+          "BUL_faction_days_reenable_low": 7
+        },
+        {
+          "BUL_faction_days_reenable_medium": 14
+        },
+        {
+          "BUL_faction_days_reenable_high": 60
+        },
+        {
+          "BUL_faction_days_reenable_very_high": 120
+        },
+        {
+          "BUL_faction_low_increase": 5
+        },
+        {
+          "BUL_faction_medium_increase": 10
+        },
+        {
+          "BUL_faction_high_increase": 15
+        },
+        {
+          "BUL_faction_low_decrease": -5
+        },
+        {
+          "BUL_faction_medium_decrease": -10
+        },
+        {
+          "BUL_faction_high_decrease": -15
+        },
+        {
+          "BUL_zveno_coup_timer_delay_low": 7
+        },
+        {
+          "BUL_zveno_coup_timer_delay_medium": 15
+        },
+        {
+          "BUL_zveno_coup_timer_delay_high": 30
+        },
+        {
+          "BUL_ff_missions_base_days_to_add": 60
+        },
+        {
+          "BUL_ff_missions_popularity_factor": 1
+        },
+        {
+          "BUL_ff_missions_loyalty_factor": 1
+        },
+        {
+          "BUL_ff_preventive_actions_against_coup": 0
+        },
+        {
+          "BUL_ff_preventive_actions_base_value": 5
+        },
+        {
+          "BUL_ff_preventive_actions_cap_value": 50
+        },
+        {
+          "BUL_purchase_equipment_cost": 25
+        },
+        {
+          "BUL_foreign_military_agreements_cost": 50
+        },
+        {
+          "BUL_german_civ_industries_cost": 75
+        },
+        {
+          "BUL_british_civ_industries_cost": 75
+        },
+        {
+          "BUL_soviet_civ_industries_cost": 75
+        },
+        {
+          "BUL_foreign_industry_consumer_goods_modifier": 0
+        },
+        {
+          "BUL_foreign_industry_production_efficiency_modifier": -0.05
+        },
+        {
+          "BUL_foreign_industry_construction_speed_modifier": -0.1
+        },
+        {
+          "BUL_german_industrial_investments": 0
+        },
+        {
+          "BUL_british_industrial_investments": 0
+        },
+        {
+          "BUL_soviet_industrial_investments": 0
+        },
+        {
+          "BUL_industrial_investments_basic_cap": 3
+        },
+        {
+          "BUL_industrial_investments_medium_cap": 5
+        },
+        {
+          "BUL_industrial_investments_max_cap": 10
+        },
+        {
+          "BUL_imro_garrisons_mp_value": 5000
+        },
+        {
+          "BUL_quantity_purchased_infantry_equipment": 1000
+        },
+        {
+          "BUL_quantity_purchased_artillery": 100
+        },
+        {
+          "BUL_quantity_purchased_motorized": 100
+        },
+        {
+          "BUL_quantity_purchased_mechanized": 50
+        },
+        {
+          "BUL_quantity_purchased_armored_car": 50
+        },
+        {
+          "BUL_quantity_purchased_light_armor": 40
+        },
+        {
+          "BUL_quantity_purchased_medium_armor": 20
+        },
+        {
+          "BUL_quantity_purchased_heavy_armor": 10
+        },
+        {
+          "BUL_quantity_purchased_fighter": 40
+        },
+        {
+          "BUL_quantity_purchased_naval_bomber": 30
+        },
+        {
+          "BUL_quantity_purchased_tactical_bomber": 20
+        },
+        {
+          "BUL_regicide_execution_time": 90
+        },
+        {
+          "BUL_our_duty_in_the_balkans_consumer_goods_modifier": -0.03
+        },
+        {
+          "BUL_our_duty_in_the_balkans_stability_modifier": 0.05
+        },
+        {
+          "BUL_tsar_boris_death_monthly_probability_factor": 0
+        }
+      ],
+      "randomize_variable": [
+        {
+          "var": "BUL_tsars_destination",
+          "distribution": "uniform",
+          "min": 2,
+          "max": 13
+        },
+        {
+          "var": "BUL_march_destination",
+          "distribution": "uniform",
+          "min": 2,
+          "max": 13
+        }
+      ],
+      "round_variable": [
+        "BUL_tsars_destination",
+        "BUL_march_destination"
+      ],
+      "48": {
+        "set_state_flag": "BUL_initial_bulgarian_state_flag"
+      },
+      "212": {
+        "set_state_flag": "BUL_initial_bulgarian_state_flag"
+      },
+      "801": {
+        "set_state_flag": "BUL_initial_bulgarian_state_flag"
+      },
+      "211": {
+        "set_state_flag": "BUL_initial_bulgarian_state_flag"
+      },
+      "77": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "803": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "106": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "731": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "184": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "971": {
+        "set_state_flag": "BUL_historical_bulgarian_claim_flag"
+      },
+      "add_opinion_modifier": [
+        {
+          "target": "GRE",
+          "modifier": "BFTB_incongruous_neighbors"
+        },
+        {
+          "target": "ROM",
+          "modifier": "BFTB_incongruous_neighbors"
+        },
+        {
+          "target": "TUR",
+          "modifier": "BFTB_incongruous_neighbors"
+        },
+        {
+          "target": "YUG",
+          "modifier": "BFTB_incongruous_neighbors"
+        }
+      ],
+      "set_popularities": {
+        "democratic": 10,
+        "fascism": 30,
+        "neutrality": 55,
+        "communism": 5
+      },
+      "recruit_character": [
+        "BUL_boris_iii",
+        "BUL_georgi_dimitrov",
+        "BUL_nikola_mushanov",
+        "BUL_hristo_lukov",
+        "BUL_atanas_shalapatov",
+        "BUL_nikola_mihov",
+        "BUL_georgi_popov",
+        "BUL_vasil_boydev",
+        "BUL_ivan_markov",
+        "BUL_georgi_markov",
+        "BUL_asen_nikolov",
+        "BUL_konstantin_lukash",
+        "BUL_nikola_stoychev",
+        "BUL_damian_velchev",
+        "BUL_angel_dotsev",
+        "BUL_theodosi_daskalov",
+        "BUL_trifon_trifonov",
+        "BUL_sava_ivanov",
+        "BUL_vladimir_stoychev",
+        "BUL_stoyan_stoyanov",
+        "BUL_zachari_zachariev",
+        "BUL_stefan_tsanev",
+        "BUL_kiril_dimitrov_yanchulev",
+        "BUL_georgi_petsov",
+        "BUL_ivan_sapundzhiev",
+        "BUL_atanas_zhilkov",
+        "BUL_kiril_stanchev",
+        "BUL_ferdinand_kozovski",
+        "BUL_georgi_drenikov",
+        "BUL_stoyan_trendafilov",
+        "BUL_ivan_variklechkov",
+        "BUL_gancho_manchev",
+        "BUL_dimitr_ayryanov",
+        "BUL_nikola_hadzipetkov",
+        "BUL_asen_toshev",
+        "BUL_bogdan_filov_fascism",
+        "BUL_dobri_bozhilov",
+        "BUL_dimitrana_ivanova",
+        "BUL_bogdan_filov",
+        "BUL_stoycho_mushanov",
+        "BUL_aleksandar_tsankov",
+        "BUL_todor_pavlov",
+        "BUL_kimon_georgiev",
+        "BUL_ivan_dochev",
+        "BUL_georgi_ivanov_kyoseivanov",
+        "BUL_stefan_stefanov",
+        "BUL_nikola_zhekov",
+        "BUL_valko_chervenkov",
+        "BUL_vasil_kolarov",
+        "BUL_konstantin_muraviev",
+        "BUL_nikola_petkov",
+        "BUL_ferdinand_i",
+        "BUL_regency_council",
+        "BUL_nikola_nakov"
+      ],
+      "activate_advisor": "BUL_georgi_ivanov_kyoseivanov",
+      "set_research_slots": 3,
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1935.1.22",
+        "election_frequency": 48,
+        "elections_allowed": false
+      },
+      "else": {
+        "add_ideas": [
+          "limited_conscription"
+        ],
+        "set_popularities": {
+          "democratic": 5,
+          "fascism": 35,
+          "neutrality": 60
+        },
+        "set_politics": {
+          "ruling_party": "neutrality",
+          "last_election": "1931.6.21",
+          "election_frequency": 48,
+          "elections_allowed": false
+        },
+        "recruit_character": [
+          "BUL_boris_iii",
+          "BUL_georgi_dimitrov",
+          "BUL_nikola_petkov",
+          "BUL_hristo_lukov",
+          "BUL_georgi_popov",
+          "BUL_vasil_boydev",
+          "BUL_asen_nikolov",
+          "BUL_georgi_petsov",
+          "BUL_atanas_zhilkov",
+          "BUL_bonyu_stoev_pironkov",
+          "BUL_ivan_gaidimitriv",
+          "BUL_kiril_stanchev",
+          "BUL_blagoi_ivanov",
+          "BUL_stoyan_stoyanov",
+          "BUL_nikola_hadzipetkov",
+          "BUL_kiril_dimitrov_yanchulev",
+          "BUL_nikola_totev_markov",
+          "BUL_georgi_ivanov_kyoseivanov",
+          "BUL_dobri_bozhilov",
+          "BUL_konstantin_muraviev"
+        ]
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_technology": {
+        "early_fighter": 1
+      }
+    }
+  ],
+  "set_convoys": 5,
+  "set_party_name": [
+    {
+      "ideology": "communism",
+      "name": "BUL_communism_party_bulgarian",
+      "long_name": "BUL_communism_party_bulgarian_long"
+    },
+    {
+      "ideology": "fascism",
+      "name": "BUL_fascism_party_bulgarian",
+      "long_name": "BUL_fascism_party_bulgarian_long"
+    }
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_trucks": 1,
+    "motorised_infantry": 1,
+    "fuel_silos": 1,
+    "basic_train": 1,
+    "tech_mountaineers": 1
+  },
+  "1939.1.1": {
+    "set_popularities": {
+      "democratic": 5,
+      "fascism": 35,
+      "neutrality": 60
+    },
+    "set_politics": {
+      "ruling_party": "neutrality",
+      "last_election": "1938.3.27",
+      "election_frequency": 48,
+      "elections_allowed": false
+    },
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": [
+      {
+        "limit": {
+          "has_dlc": "Battle for the Bosporus"
+        },
+        "complete_national_focus": [
+          "BUL_power_to_the_tsar",
+          "BUL_dissolve_the_military_union",
+          "BUL_acquire_modern_tools",
+          "BUL_the_tsars_regime",
+          "BUL_improve_the_road_system",
+          "BUL_restore_the_tarnovo_constitution",
+          "BUL_freedom_of_press",
+          "BUL_invigorate_national_industry",
+          "BUL_promote_bulgarian_nationalism",
+          "BUL_limited_womens_suffrage",
+          "BUL_expand_sofia_university",
+          "BUL_bulgarian_irredentism",
+          "BUL_approach_germany",
+          "BUL_reorganize_the_military_industry",
+          "BUL_illusions_of_a_non_partisan_system"
+        ],
+        "unlock_national_focus": "BUL_negotiate_bulgarian_rearmament",
+        "if": [
+          {
+            "limit": {
+              "has_dlc": "Arms Against Tyranny"
+            },
+            "remove_ideas": "BUL_army_restrictions_aat"
+          },
+          {
+            "limit": {
+              "NOT": {
+                "has_dlc": "Arms Against Tyranny"
+              }
+            },
+            "remove_ideas": "BUL_army_restrictions"
+          }
+        ],
+        "remove_ideas": "BUL_zveno_ns",
+        "set_country_flag": [
+          "BUL_disposed_of_zveno_generals_flag",
+          "BUL_zveno_leaders_imprisoned_flag",
+          "BUL_raided_zveno_supporters_flag",
+          "BUL_zveno_destroyed_flag",
+          "BUL_german_aircraft_donation_flag"
+        ],
+        "every_unit_leader": {
+          "limit": {
+            "has_trait": "trait_BUL_zveno_member"
+          },
+          "retire": true
+        },
+        "clr_country_flag": "BUL_freedom_of_press_flag",
+        "add_opinion_modifier": {
+          "target": "GER",
+          "modifier": "BUL_donated_aircraft"
+        },
+        "else": {
+          "complete_national_focus": [
+            "army_effort",
+            "equipment_effort",
+            "motorization_effort",
+            "aviation_effort",
+            "industrial_effort",
+            "construction_effort",
+            "production_effort"
+          ]
+        }
+      },
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "No Step Back"
+          }
+        },
+        "set_technology": {
+          "gwtank": 1,
+          "basic_light_tank": 1
+        },
+        "set_oob": "BUL_1939"
+      },
+      {
+        "limit": {
+          "has_dlc": "No Step Back"
+        },
+        "set_technology": {
+          "gwtank_chassis": 1,
+          "basic_light_tank_chassis": 1
+        },
+        "set_oob": "BUL_1939_nsb"
+      },
+      {
+        "limit": {
+          "has_dlc": "By Blood Alone"
+        },
+        "set_air_oob": "BUL_1939_air_bba",
+        "set_technology": {
+          "bba_early_transport_plane": 1
+        },
+        "else": {
+          "set_air_oob": "BUL_1939_air_legacy",
+          "set_technology": {
+            "fighter1": 1,
+            "early_bomber": 1,
+            "tactical_bomber1": 1,
+            "early_transport_plane": 1
+          }
+        }
+      }
+    ],
+    "set_technology": {
+      "gw_artillery": 1,
+      "interwar_artillery": 1,
+      "tech_recon": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "force_rotation": 1,
+      "fighter_baiting": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_refining": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  }
+}

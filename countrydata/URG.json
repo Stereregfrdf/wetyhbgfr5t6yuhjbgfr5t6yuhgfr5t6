@@ -1,0 +1,316 @@
+{
+  "capital": 300,
+  "oob": "URG_1936",
+  "every_core_state": {
+    "ROOT": {
+      "add_to_array": {
+        "cores_at_game_start": "PREV"
+      }
+    }
+  },
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_naval_oob": "URG_1936_naval_mtg",
+      "ELSE": {
+        "set_naval_oob": "URG_1936_naval_legacy"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Trial of Allegiance"
+      },
+      "JUNO_set_shared_military_branch_defaults": true,
+      "add_ideas": "idea_URG_low_amounts_of_external_debts",
+      "set_war_support": 0.12,
+      "set_stability": 0.39
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_technology": {
+        "early_fighter": 1
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "early_destroyer": 1,
+        "early_light_cruiser": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "basic_naval_mines": 1,
+        "early_ship_hull_light": 1,
+        "basic_battery": 1,
+        "basic_torpedo": 1
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Trial of Allegiance"
+        }
+      },
+      "recruit_character": [
+        "URG_gabriel_terra",
+        "URG_venancio_flores",
+        "URG_bernardo_gonzalez",
+        "URG_juan_manuel_aguirre",
+        "URG_ernesto_sanchez_elizondo",
+        "URG_rafael_marques_ayala",
+        "URG_a_martin_de_la_flores",
+        "URG_carlos_neves_ochoa",
+        "URG_hector_lopez_camara",
+        "URG_valentin_gomez",
+        "URG_enrico_amancias_rodriguez",
+        "URG_cantido_quintio_reyes",
+        "URG_cosme_alvarez_berisso",
+        "URG_jorge_eloi_mendoza",
+        "URG_vittorio_amato_masso",
+        "URG_carlos_jackson_urribe",
+        "URG_teo_bucardi_ramos",
+        "URG_eleazar_diaz_caminate",
+        "URG_manuel_heinz_azpurua",
+        "URG_alfredo_baldomir",
+        "URG_horacio_arredondo",
+        "URG_paulo_ortega_frusci",
+        "URG_emilio_frugoni"
+      ],
+      "ELSE_IF": {
+        "limit": {
+          "has_dlc": "Trial of Allegiance"
+        },
+        "recruit_character": [
+          "URG_gabriel_terra",
+          "URG_adolfo_agorio",
+          "URG_teodomiro_varela_de_andrade",
+          "URG_eugenio_gomez",
+          "URG_arnulf_fuhrmann",
+          "URG_luis_alberto_herrera",
+          "URG_alfredo_baldomir_ferrari",
+          "URG_ernesto_sanchez_elizondo",
+          "URG_rafael_marques_ayala",
+          "URG_a_martin_de_la_flores",
+          "URG_carlos_neves_ochoa",
+          "URG_hector_lopez_camara",
+          "URG_valentin_gomez",
+          "URG_enrico_amancias_rodriguez",
+          "URG_cantido_quintio_reyes",
+          "URG_cosme_alvarez_berisso",
+          "URG_jorge_eloi_mendoza",
+          "URG_vittorio_amato_masso",
+          "URG_carlos_jackson_urribe",
+          "URG_teo_bucardi_ramos",
+          "URG_eleazar_diaz_caminate",
+          "URG_manuel_heinz_azpurua",
+          "URG_alfredo_baldomir",
+          "URG_horacio_arredondo",
+          "URG_paulo_ortega_frusci",
+          "URG_emilio_frugoni",
+          "URG_augustus_caesar_bado",
+          "URG_jose_espalter",
+          "URG_cesar_charlone",
+          "URG_eduardo_victor_haedo",
+          "URG_martin_recaredo_echegoyen",
+          "URG_zoilo_saldias",
+          "URG_juan_cesar_mussio_fournier",
+          "URG_cesar_gutierrez",
+          "URG_domingo_mendivil",
+          "URG_andres_puyol",
+          "URG_alfredo_campos",
+          "URG_julio_roletti",
+          "URG_esteban_elena",
+          "URG_gervasio_de_posadas_belgrano"
+        ]
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Man the Guns"
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "create_equipment_variant": {
+        "name": "Uruguay Class",
+        "type": "ship_hull_light_1",
+        "name_group": "URG_DD_HISTORICAL",
+        "parent_version": 0,
+        "modules": {
+          "fixed_ship_battery_slot": "ship_light_battery_1",
+          "fixed_ship_anti_air_slot": "ship_anti_air_1",
+          "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+          "fixed_ship_radar_slot": "empty",
+          "fixed_ship_engine_slot": "light_ship_engine_1",
+          "fixed_ship_torpedo_slot": "ship_torpedo_1",
+          "mid_1_custom_slot": "empty",
+          "rear_1_custom_slot": "empty"
+        }
+      }
+    }
+  ],
+  "set_cosmetic_tag": "URG_is_unaligned_URG_but_has_normal_URG_flag",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "interwar_antiair": 1,
+    "tech_support": 1,
+    "tech_engineers": 1
+  },
+  "set_country_flag": "monroe_doctrine",
+  "set_convoys": 15,
+  "1939.1.1": [
+    {
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1938.3.28",
+        "election_frequency": 48,
+        "elections_allowed": true
+      },
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "if": [
+        {
+          "limit": {
+            "has_dlc": "Trial of Allegiance"
+          },
+          "complete_national_focus": [
+            "URG_terras_dictatorship",
+            "URG_statism",
+            "URG_right_to_food_housing_and_health",
+            "URG_womens_vote",
+            "URG_prohibition_of_usury",
+            "URG_break_relations_with_the_ussr",
+            "URG_tour_to_italy",
+            "URG_recognize_francoist_spain",
+            "URG_rincon_del_bonete_hydroelectric_power_station",
+            "URG_revaluation_law",
+            "URG_brou",
+            "URG_pay_of_all_external_debts",
+            "URG_ministry_of_public_works",
+            "URG_import_substitution",
+            "URG_rapid_industrialization",
+            "URG_la_teja_refinery",
+            "URG_pluna",
+            "URG_conaprole",
+            "URG_mercado_modelo",
+            "URG_colorado_victory"
+          ]
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Trial of Allegiance"
+            }
+          },
+          "complete_national_focus": [
+            "army_effort",
+            "equipment_effort",
+            "motorization_effort",
+            "aviation_effort",
+            "naval_effort",
+            "flexible_navy",
+            "industrial_effort",
+            "construction_effort",
+            "production_effort"
+          ]
+        }
+      ],
+      "oob": "URG_1939",
+      "IF": {
+        "limit": {
+          "has_dlc": "Man the Guns"
+        },
+        "set_naval_oob": "URG_1939_naval_mtg",
+        "ELSE": {
+          "set_naval_oob": "URG_1939_naval_legacy"
+        }
+      },
+      "set_technology": {
+        "infantry_weapons1": 1,
+        "support_weapons": 1,
+        "air_superiority": 1,
+        "grand_battle_plan": 1,
+        "trench_warfare": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "synth_oil_experiments": 1,
+        "fuel_silos": 1,
+        "oil_processing": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "IF": [
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Trial of Allegiance"
+            }
+          },
+          "recruit_character": "URG_alfredo_baldomir_ferrari",
+          "promote_character": "URG_alfredo_baldomir_ferrari",
+          "retire_character": "URG_gabriel_terra",
+          "ELSE_IF": {
+            "limit": {
+              "has_dlc": "Arms Against Tyranny"
+            },
+            "retire_character": "URG_gabriel_terra"
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "Trial of Allegiance"
+          },
+          "remove_ideas": [
+            "URG_terra_dictatorship"
+          ]
+        }
+      ]
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1934.4.19",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 44,
+    "neutrality": 53,
+    "communism": 3,
+    "fascism": 0
+  }
+}

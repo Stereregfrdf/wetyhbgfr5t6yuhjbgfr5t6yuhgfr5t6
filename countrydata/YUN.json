@@ -1,0 +1,112 @@
+{
+  "capital": 325,
+  "oob": "YUN_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "if": {
+    "limit": {
+      "has_dlc": "Waking the Tiger"
+    },
+    "add_ideas": [
+      "PRC_government_corruption",
+      "CHI_ineffective_bureaucracy_warlord",
+      "CHI_warlord_state_idea"
+    ]
+  },
+  "recruit_character": [
+    "YUN_long_yun",
+    "YUN_lu_han",
+    "YUN_mao_dong",
+    "YUN_cheng_peng",
+    "YUN_hsia_wu",
+    "YUN_liao_fang",
+    "YUN_luo_sun",
+    "YUN_huang_dong",
+    "YUN_zhang_wu",
+    "YUN_zhu_hu",
+    "YUN_li_jiang",
+    "YUN_chen_zhao",
+    "YUN_hu_wei",
+    "YUN_liu_zhao",
+    "YUN_liang_peng",
+    "YUN_pan_tian",
+    "YUN_wang_jiang",
+    "YUN_zhou_zhirou",
+    "YUN_liu_wenhui",
+    "YUN_ding_zhipan"
+  ],
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": {
+      "limit": {
+        "has_dlc": "Waking the Tiger"
+      },
+      "CHI": {
+        "add_to_faction": "PREV"
+      },
+      "add_to_war": {
+        "targeted_alliance": "CHI",
+        "enemy": "JAP",
+        "hostility_reason": "asked_to_join"
+      },
+      "complete_national_focus": [
+        "CHI_secure_internal_politics",
+        "CHI_cooperation_with_the_nationalists",
+        "CHI_industrial_investment",
+        "CHI_public_education_reform",
+        "CHI_long_term_economic_planning",
+        "CHI_technological_cooperation",
+        "CHI_local_arms_production",
+        "CHI_new_model_province",
+        "CHI_root_out_corruption",
+        "CHI_land_reform",
+        "CHI_reform_the_administration"
+      ],
+      "else": {
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "construction_effort_2",
+          "production_effort_2",
+          "infrastructure_effort",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    },
+    "oob": "YUN_1939",
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 20,
+    "neutrality": 80
+  }
+}

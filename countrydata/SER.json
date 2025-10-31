@@ -1,0 +1,214 @@
+{
+  "capital": 107,
+  "oob": "YUG_1936",
+  "set_research_slots": 3,
+  "add_ideas": [
+    "anti_german_military"
+  ],
+  "set_technology": {
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "tech_mountaineers": 1,
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_trucks": 1,
+    "fuel_silos": 1
+  },
+  "if": [
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_technology": {
+        "early_fighter": 1
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_technology": {
+        "gwtank": 1,
+        "basic_light_tank": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_technology": {
+        "gwtank_chassis": 1,
+        "basic_light_tank_chassis": 1
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "early_destroyer": 1,
+        "early_light_cruiser": 1,
+        "early_submarine": 1,
+        "transport": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "early_ship_hull_submarine": 1,
+        "early_ship_hull_light": 1,
+        "early_ship_hull_cruiser": 1,
+        "basic_battery": 1,
+        "basic_torpedo": 1,
+        "mtg_transport": 1
+      }
+    }
+  ],
+  "recruit_character": [
+    "SER_acd2",
+    "SER_communist_guy",
+    "SER_acr",
+    "SER_fascist_guy",
+    "SER_aa2",
+    "SER_democratic_guy",
+    "SER_ncm",
+    "SER_nt",
+    "SER_awt",
+    "SER_ar",
+    "SER_stc",
+    "SER_ai2",
+    "SER_aco2",
+    "SER_ncs",
+    "SER_coi",
+    "SER_acgs",
+    "SER_acas",
+    "SER_pot",
+    "SER_nccr",
+    "SER_mt"
+  ],
+  "1939.1.1": [
+    {
+      "add_ideas": [
+        "limited_conscription"
+      ],
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "naval_effort",
+        "flexible_navy",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "oob": "YUG_1939",
+      "set_technology": {
+        "gw_artillery": 1,
+        "interwar_artillery": 1,
+        "interwar_antitank": 1,
+        "interwar_antiair": 1,
+        "infantry_weapons2": 1,
+        "support_weapons": 1,
+        "basic_destroyer": 1,
+        "air_superiority": 1,
+        "grand_battle_plan": 1,
+        "trench_warfare": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "computing_machine": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "construction1": 1,
+        "concentrated_industry": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      },
+      "if": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "By Blood Alone"
+          }
+        },
+        "set_technology": {
+          "fighter1": 1,
+          "early_bomber": 1,
+          "tactical_bomber1": 1,
+          "CAS1": 1,
+          "naval_bomber1": 1
+        }
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1939.1.1",
+        "election_frequency": 36,
+        "elections_allowed": true
+      }
+    }
+  ],
+  "set_convoys": 0,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 36,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 20,
+    "fascism": 30,
+    "communism": 20,
+    "neutrality": 30
+  },
+  "set_stability": 0.6,
+  "create_country_leader": [
+    {
+      "name": "Draza Mihailovic",
+      "desc": "",
+      "picture": "GFX_portrait_Draza_Mihailovic",
+      "expire": "1965.1.1",
+      "ideology": "conservatism",
+      "traits": []
+    },
+    {
+      "name": "Milan Nedic",
+      "desc": "",
+      "picture": "GFX_portrait_Milan_Nedic",
+      "expire": "1965.1.1",
+      "ideology": "fascism_ideology",
+      "traits": []
+    },
+    {
+      "name": "Peter Karadordevic",
+      "desc": "",
+      "picture": "GFX_portrait_Peter_Karadordevic",
+      "expire": "1965.1.1",
+      "ideology": "Despotism",
+      "traits": []
+    },
+    {
+      "name": "Zivorad Jovanovic",
+      "desc": "",
+      "picture": "GFX_portrait_Zivorad_Jovanovic",
+      "expire": "1965.1.1",
+      "ideology": "leninism",
+      "traits": []
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "capital": 995,
+  "oob": "BRM_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_support": 1,
+    "tech_engineers": 1
+  },
+  "set_convoys": 5,
+  "set_cosmetic_tag": "BRM_british",
+  "recruit_character": [
+    "BRM_acgs",
+    "BRM_acr",
+    "BRM_stc",
+    "BRM_ncm",
+    "BRM_democratic_guy",
+    "BRM_communist_guy",
+    "BRM_coi",
+    "BRM_pot",
+    "BRM_aa2",
+    "BRM_awt",
+    "BRM_acas",
+    "BRM_mt",
+    "BRM_nccr",
+    "BRM_ai2",
+    "BRM_ncs",
+    "BRM_aco2",
+    "BRM_acd2",
+    "BRM_nt",
+    "BRM_ar",
+    "BRM_fascist_guy",
+    "BRM_archibald_cochrane",
+    "BRM_ne_win",
+    "BRM_ba_maw",
+    "BRM_u_nu",
+    "BRM_myat_phaya_lat"
+  ],
+  "1939.1.1": {
+    "oob": "BRM_1939",
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 72,
+    "fascism": 2,
+    "communism": 14,
+    "neutrality": 12
+  }
+}

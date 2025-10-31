@@ -1,0 +1,505 @@
+{
+  "capital": 291,
+  "oob": "IRQ_1936",
+  "if": [
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "IRQ_1936_air_bba",
+      "else": {
+        "set_air_oob": "IRQ_1936_air_legacy",
+        "set_technology": {
+          "early_fighter": 1,
+          "CAS1": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Battle for the Bosporus"
+      },
+      "set_technology": {
+        "camelry": 1
+      }
+    }
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "fuel_silos": 1
+  },
+  "set_convoys": 5,
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "recruit_character": [
+        "IRQ_yasin_al_hashimi",
+        "IRQ_ghazi_i"
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Graveyard of Empires"
+        }
+      },
+      "recruit_character": [
+        "IRQ_ghazi_i",
+        "IRQ_yasin_al_hashimi"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "recruit_character": [
+        "IRQ_abd_al_ilah",
+        "IRQ_taha_al_hashemi",
+        "IRQ_muhammad_husayn_kashif_al_ghita",
+        "PAL_amin_al_husseini",
+        "IRQ_muhammad_amin_zaki",
+        "IRQ_kamil_shabib",
+        "IRQ_salah_al_din_al_sabbagh",
+        "IRQ_jamil_abdul_wahab",
+        "IRQ_fawsi_al_kaukji",
+        "IRQ_mahmud_salman",
+        "IRQ_hikmat_suleiman",
+        "IRQ_tawfiq_al_suawaidi",
+        "IRQ_husain_al_rahhal",
+        "IRQ_max_von_oppenheim",
+        "IRQ_saib_shawkat",
+        "IRQ_ibrahim_al_ghandanfari",
+        "ARM_calouste_gulbenkian",
+        "IRQ_hussein_fawzi",
+        "IRQ_fritz_grobba",
+        "IRQ_werner_junck",
+        "IRQ_harry_george_smart",
+        "IRQ_naji_al_suwaidi",
+        "IRQ_akram_mushtak",
+        "IRQ_ahmed_barzani",
+        "IRQ_mustafa_barzani",
+        "IRQ_muhammad_ali_jawad",
+        "IRQ_maruf_al_rusafi"
+      ],
+      "IRQ_salah_al_din_al_sabbagh": {
+        "set_character_flag": "IRQ_golden_square_char"
+      },
+      "IRQ_mahmud_salman": {
+        "set_character_flag": "IRQ_golden_square_char"
+      },
+      "IRQ_fahmi_said": {
+        "set_character_flag": "IRQ_golden_square_char"
+      },
+      "IRQ_kamil_shabib": {
+        "set_character_flag": "IRQ_golden_square_char"
+      },
+      "add_ideas": [
+        "IRQ_ghazi_i",
+        "IRQ_golden_square",
+        "IRQ_anglo_iraqi_treaty",
+        "IRQ_agrarian_society"
+      ],
+      "set_variable": [
+        {
+          "IRQ_experience_gain_army_factor": -0.03
+        },
+        {
+          "IRQ_army_org_factor": -0.05
+        },
+        {
+          "IRQ_army_core_defence_factor": 0
+        },
+        {
+          "IRQ_army_core_attack_factor": 0
+        },
+        {
+          "IRQ_army_armor_defence_factor": 0
+        },
+        {
+          "IRQ_army_armor_attack_factor": 0
+        },
+        {
+          "IRQ_army_artillery_attack_factor": 0
+        },
+        {
+          "IRQ_army_artillery_defence_factor": 0
+        },
+        {
+          "IRQ_conscription_factor": -0.05
+        },
+        {
+          "IRQ_training_time_factor": 0
+        },
+        {
+          "IRQ_conscription": 0
+        },
+        {
+          "IRQ_army_defence_factor": 0
+        },
+        {
+          "IRQ_army_attack_factor": 0
+        },
+        {
+          "IRQ_special_forces_cap": 0
+        },
+        {
+          "IRQ_special_forces_out_of_supply_factor": 0
+        },
+        {
+          "IRQ_extra_marine_supply_grace": 0
+        },
+        {
+          "IRQ_max_planning_factor": 0
+        },
+        {
+          "IRQ_planning_speed": -0.1
+        },
+        {
+          "IRQ_max_command_power_mult": 0
+        },
+        {
+          "IRQ_command_power_gain_mult": 0
+        },
+        {
+          "IRQ_acclimatization_cold_climate_gain_factor": 0
+        },
+        {
+          "IRQ_acclimatization_hot_climate_gain_factor": 0.15
+        },
+        {
+          "IRQ_motorized_attack_factor": 0
+        },
+        {
+          "IRQ_mechanized_attack_factor": 0
+        },
+        {
+          "IRQ_modifier_army_sub_unit_cavalry_attack_factor": 0
+        },
+        {
+          "IRQ_modifier_army_sub_unit_cavalry_defence_factor": 0
+        },
+        {
+          "IRQ_modifier_army_sub_unit_cavalry_speed_factor": 0
+        },
+        {
+          "IRQ_air_accidents_factor": -0.1
+        },
+        {
+          "IRQ_air_ace_generation_chance_factor": 0
+        },
+        {
+          "IRQ_air_weather_penalty": -0.05
+        },
+        {
+          "IRQ_air_training_xp_gain_factor": 0
+        },
+        {
+          "IRQ_air_manpower_requirement_factor": 0
+        },
+        {
+          "IRQ_air_agility_factor": 0
+        },
+        {
+          "IRQ_air_nav_efficiency": 0
+        },
+        {
+          "IRQ_air_cas_efficiency": 0
+        },
+        {
+          "IRQ_air_strategic_bomber_bombing_factor": 0
+        },
+        {
+          "IRQ_air_range_factor": 0
+        },
+        {
+          "IRQ_air_fuel_consumption_factor": 0
+        },
+        {
+          "IRQ_air_superiority_efficiency": 0
+        },
+        {
+          "IRQ_navy_refit_speed": 0
+        },
+        {
+          "IRQ_navy_repair_speed_factor": 0
+        },
+        {
+          "IRQ_experience_gain_navy": 0.1
+        },
+        {
+          "IRQ_mines_planting_by_fleets_factor": 0
+        },
+        {
+          "IRQ_navy_anti_air_attack_factor": 0
+        },
+        {
+          "IRQ_navy_spirit_category_type_cost_factor": 0
+        },
+        {
+          "IRQ_convoy_retreat_speed": 0
+        },
+        {
+          "IRQ_spotting_chance": 0
+        },
+        {
+          "IRQ_production_speed_dockyard_factor": 0
+        },
+        {
+          "IRQ_industrial_capacity_dockyard": 0
+        },
+        {
+          "IRQ_extra_marine_supply_grace": 0
+        },
+        {
+          "IRQ_naval_invasion_capacity": 0
+        },
+        {
+          "IRQ_naval_mines_effect_reduction": 0
+        },
+        {
+          "IRQ_experience_gain_navy_unit_factor": 0.1
+        },
+        {
+          "IRQ_naval_coordination": 0
+        },
+        {
+          "IRQ_naval_equipment_upgrade_xp_cost": 0
+        },
+        {
+          "IRQ_naval_morale_factor": 0
+        },
+        {
+          "IRQ_screening_efficiency": 0
+        },
+        {
+          "IRQ_convoy_escort_efficiency": 0
+        },
+        {
+          "IRQ_navy_capital_ship_defence_factor": 0
+        },
+        {
+          "IRQ_naval_accidents_chance": 0
+        },
+        {
+          "IRQ_navy_screen_defence_factor": 0
+        },
+        {
+          "IRQ_production_speed_coastal_bunker_factor": 0
+        }
+      ],
+      "add_dynamic_modifier": {
+        "modifier": "IRQ_royal_army_modifier_IRQ"
+      },
+      "IF": {
+        "limit": {
+          "has_dlc": "Arms Against Tyranny"
+        },
+        "give_market_access": "ENG"
+      },
+      "ENG": {
+        "add_opinion_modifier": {
+          "target": "IRQ",
+          "modifier": "IRQ_anglo_iraqi_treaty_in_place_opm"
+        }
+      },
+      "add_opinion_modifier": {
+        "target": "ENG",
+        "modifier": "IRQ_anglo_iraqi_treaty_in_place_opm"
+      },
+      "676": {
+        "add_dynamic_modifier": {
+          "modifier": "KUR_resistance_modifier"
+        }
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Graveyard of Empires"
+        }
+      },
+      "recruit_character": [
+        "IRQ_abd_almalik_ibn_hisham",
+        "IRQ_ali_abn_hussein",
+        "IRQ_iskandar_al-shami",
+        "IRQ_mustafa_al_quidsi",
+        "IRQ_ali_ben_jawad",
+        "IRQ_abdullah_al-tell",
+        "IRQ_khaled_al_dalabeeh",
+        "IRQ_taha_al_ahmani"
+      ]
+    }
+  ],
+  "recruit_character": [
+    "IRQ_rashid_ali_algaylani",
+    "IRQ_yusuf_salman_yusuf",
+    "IRQ_fahmi_said",
+    "IRQ_ali_mahmud_al_shaykh",
+    "IRQ_hamdi_al_pachachi",
+    "IRQ_jamil_al_midfai",
+    "IRQ_bakr_sidqi",
+    "IRQ_abdullah",
+    "IRQ_amir_al_illah",
+    "IRQ_nuri_as_said",
+    "IRQ_sharaf_bin_rajeh",
+    "IRQ_faisal_ii"
+  ],
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "IF": [
+        {
+          "limit": {
+            "has_dlc": "Graveyard of Empires"
+          },
+          "complete_national_focus": [
+            "IRQ_party_of_national_brotherhood",
+            "IRQ_royal_iraqi_army",
+            "IRQ_bakr_sidqi_coup",
+            "IRQ_raf_levies_focus",
+            "IRQ_assasination_of_sidqi",
+            "IRQ_expand_habbaniya_airbase",
+            "IRQ_decouple_from_the_pound",
+            "IRQ_found_the_iraqi_state_railways",
+            "IRQ_purchase_foreign_equipment",
+            "IRQ_independent_flight_schools",
+            "IRQ_infantry_focus",
+            "IRQ_purchase_british_aircraft",
+            "IRQ_strengthen_the_iraqi_dinar",
+            "IRQ_heavy_industry_investments",
+            "IRQ_local_arms_industry",
+            "IRQ_al_muthanna_club",
+            "IRQ_construct_the_kut_barrage",
+            "IRQ_baghdad_colleges_of_engineering_and_education",
+            "IRQ_found_southern_steel_plants",
+            "IRQ_modernization"
+          ],
+          "diplomatic_relation": [
+            {
+              "country": "TUR",
+              "relation": "non_aggression_pact",
+              "active": true
+            },
+            {
+              "country": "PER",
+              "relation": "non_aggression_pact",
+              "active": true
+            },
+            {
+              "country": "AFG",
+              "relation": "non_aggression_pact",
+              "active": true
+            }
+          ],
+          "add_dynamic_modifier": {
+            "modifier": "SSB_saadabad_pact"
+          },
+          "remove_ideas": [
+            "IRQ_bakr_sidqi",
+            "IRQ_ghazi_i"
+          ],
+          "retire_character": [
+            "IRQ_ghazi_i",
+            "IRQ_bakr_sidqi"
+          ],
+          "add_ideas": "IRQ_regent_idea"
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Graveyard of Empires"
+            }
+          },
+          "complete_national_focus": [
+            "army_effort",
+            "equipment_effort",
+            "motorization_effort",
+            "aviation_effort",
+            "construction_effort_2",
+            "production_effort_2",
+            "infrastructure_effort",
+            "industrial_effort",
+            "construction_effort",
+            "production_effort"
+          ]
+        }
+      ],
+      "oob": "IRQ_1939",
+      "if": {
+        "limit": {
+          "has_dlc": "By Blood Alone"
+        },
+        "set_air_oob": "IRQ_1939_air_bba",
+        "else": {
+          "set_air_oob": "IRQ_1939_air_legacy"
+        }
+      },
+      "set_technology": {
+        "tech_support": 1,
+        "tech_recon": 1,
+        "infantry_weapons2": 1,
+        "support_weapons": 1,
+        "gw_artillery": 1,
+        "air_superiority": 1,
+        "grand_battle_plan": 1,
+        "trench_warfare": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "computing_machine": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "fuel_refining": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1936.1.1",
+        "election_frequency": 48,
+        "elections_allowed": false
+      },
+      "set_popularities": {
+        "fascism": 30,
+        "neutrality": 70
+      },
+      "IF": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Graveyard of Empires"
+          }
+        },
+        "recruit_character": "IRQ_faisal_ii",
+        "promote_character": "IRQ_faisal_ii",
+        "retire_character": "IRQ_ghazi_i"
+      }
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 20,
+    "neutrality": 80
+  }
+}

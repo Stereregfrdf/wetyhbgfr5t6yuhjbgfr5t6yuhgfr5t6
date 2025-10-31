@@ -1,0 +1,375 @@
+{
+  "capital": 271,
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "ETH_set_up_lon_arms_resolution_effect": true,
+      "set_war_support": 0.3,
+      "set_oob": "ETH_1936_bba",
+      "set_variable": [
+        {
+          "var_ETH_chitet_cooldown": 180
+        },
+        {
+          "ETH.ETH_medal_xp_gain": 100
+        },
+        {
+          "ETH_war_escalation_level": 0
+        },
+        {
+          "ETH_war_escalation_length": 123
+        },
+        {
+          "temp_power_struggle_meter": -25
+        },
+        {
+          "ETH_hold_the_capital_time": 180
+        },
+        {
+          "ETH_treasury": 100
+        },
+        {
+          "ETH_recruit_mercenaries_cost": 15
+        },
+        {
+          "ETH_buy_arms_from_host_cost": 20
+        },
+        {
+          "ETH_re_enable_time_international_actions": 30
+        },
+        {
+          "ETH_army_max_dig_in_factor": -3
+        },
+        {
+          "ETH_army_dig_in_speed_factor": -0.5
+        },
+        {
+          "ETH_army_experience_gain_army_factor": -0.2
+        },
+        {
+          "ETH_army_experience_loss_factor": 0.1
+        },
+        {
+          "ETH_army_army_defence_factor": -0.15
+        },
+        {
+          "ETH_army_army_org_factor": -0.05
+        },
+        {
+          "ETH_army_modifier_army_sub_unit_infantry_attack_factor": 0.05
+        },
+        {
+          "ETH_army_modifier_army_sub_unit_irregular_infantry_attack_factor": 0.1
+        },
+        {
+          "ETH_army_supply_consumption_factor": -0.1
+        },
+        {
+          "ETH_navy_naval_coordination": -0.1
+        },
+        {
+          "ETH_navy_screening_efficiency": -0.1
+        },
+        {
+          "ETH_navy_repair_speed_factor": -0.1
+        },
+        {
+          "ETH_navy_naval_doctrine_cost_factor": 0.5
+        },
+        {
+          "ETH_navy_refit_ic_cost": 0.25
+        },
+        {
+          "ETH_airforce_air_doctrine_cost_factor": 0.5
+        },
+        {
+          "ETH_airforce_enemy_army_bonus_air_superiority_factor": 0.25
+        },
+        {
+          "ETH_airforce_air_accidents_factor": 0.15
+        },
+        {
+          "ETH_airforce_air_attack_factor": -0.15
+        },
+        {
+          "ETH_bureaucracy_research_speed_factor": -0.25
+        },
+        {
+          "ETH_bureaucracy_production_speed_buildings_factor": -0.25
+        },
+        {
+          "ETH_bureaucracy_production_factory_max_efficiency_factor": -0.1
+        },
+        {
+          "ETH_industrialization_industrial_capacity_dockyard": -0.1
+        },
+        {
+          "ETH_industrialization_industrial_capacity_factory": -0.1
+        },
+        {
+          "ETH_industrialization_line_change_production_efficiency_factor": -0.1
+        },
+        {
+          "ETH_industrialization_consumer_goods_factor": 0.05
+        },
+        {
+          "ETH_industrialization_industry_air_damage_factor": 0
+        },
+        {
+          "ETH_industrialization_industry_repair_factor": 0
+        },
+        {
+          "ETH_irc_morale_factor": 0.1
+        },
+        {
+          "ETH_irc_enemy_army_bonus_air_superiority_factor": -0.05
+        },
+        {
+          "ETH_communist_factory_repair_factor": 0
+        },
+        {
+          "ETH_state_decentralization_building_slots": -0.1
+        },
+        {
+          "ETH_state_decentralization_infrastructure": -0.1
+        },
+        {
+          "ETH_state_decentralization_resources": -0.1
+        },
+        {
+          "ETH_state_decentralization_defence": 0.05
+        },
+        {
+          "ETH_state_decentralization_attack": 0.15
+        },
+        {
+          "ETH_state_decentralization_recruitable_population": -0.1
+        },
+        {
+          "ETH_state_decentralization_army_speed": 0.1
+        }
+      ],
+      "set_country_flag": "ETH_chitet_raised_flag",
+      "add_dynamic_modifier": [
+        {
+          "modifier": "ETH_corrupt_bureaucracy_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_industrialization_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_international_red_cross_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_army_1_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_navy_1_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_airforce_1_dynamic_modifier"
+        },
+        {
+          "modifier": "ETH_operative_modifier"
+        }
+      ],
+      "set_power_balance": {
+        "id": "ETH_centralization_balance",
+        "set_default": true
+      },
+      "add_ideas": [
+        "ETH_conservative_high_command_idea",
+        "ETH_the_heroes_of_adwa_idea",
+        "ETH_chitet_law",
+        "ETH_christmas_offensive_idea"
+      ],
+      "if": [
+        {
+          "limit": {
+            "has_dlc": "Arms Against Tyranny"
+          },
+          "add_ideas": "ETH_on_our_own_idea_aat"
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Arms Against Tyranny"
+            }
+          },
+          "add_ideas": "ETH_on_our_own_idea"
+        }
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_oob": "ETH_1936",
+      "set_variable": [
+        {
+          "ETH_war_escalation_level": 0
+        },
+        {
+          "ETH_war_escalation_length": 123
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "recruit_character": [
+        "ETH_hailu_tekle_haymanot",
+        "ETH_abba_jofir",
+        "ETH_amha_selassie",
+        "ETH_mulugeta_yeggazu_of_illubabor",
+        "ETH_abebe_aregai",
+        "ETH_balcho_safo",
+        "ETH_ayalew_birru",
+        "ETH_beyene_merid",
+        "ETH_nasibu_zeamanuel",
+        "ETH_random_general_1",
+        "ETH_random_general_2",
+        "ETH_random_general_3",
+        "ETH_random_general_4",
+        "ETH_random_general_5",
+        "ETH_random_general_6",
+        "ETH_abuna_qerellos_iv",
+        "IA_emma_goldman",
+        "ETH_heruy_wolde_selassie",
+        "ETH_getachew_abate",
+        "IA_sakutaro_iwasa",
+        "IA_sanshiro_ishikawa",
+        "ETH_workneh_eshete",
+        "ETH_tadesse_birru",
+        "ETH_yilma_deressa",
+        "ETH_menen_asfaw",
+        "ETH_abuna_abraham",
+        "ETH_tekle_hawariat_tekle_mariyam",
+        "ETH_random_leader_1",
+        "ETH_random_leader_2",
+        "ETH_random_leader_3",
+        "ETH_random_leader_4",
+        "ETH_random_leader_5",
+        "ETH_random_leader_6",
+        "ETH_senedu_gebru",
+        "ETH_random_sud_advisor",
+        "ETH_random_som_advisor",
+        "ETH_anarchist_council",
+        "ETH_prov_mil_admin",
+        "ETH_viking_tamm",
+        "ETH_carl_gustav_von_rosen",
+        "ETH_domenico_mondelli",
+        "ETH_wehib_pasha",
+        "ETH_feodor_konovalov"
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "recruit_character": [
+        "ETH_fitawrari_yeebio_woldai",
+        "ETH_amare_makonnen",
+        "ETH_gabriel_zawde_gilaneh",
+        "ETH_woldemeskal_tariku",
+        "ETH_ras_kebbede",
+        "ETH_wondossen_kassa",
+        "ETH_dedja_zinatch_nadeon",
+        "ETH_haile_abba_mersa",
+        "ETH_ras_seyum",
+        "ETH_mesfin_sileshi",
+        "ETH_lij_abiye_abebe",
+        "ETH_lij_johannes",
+        "ETH_fitauri_zawde_gobena",
+        "ETH_bedjironde_tekle_hawariate"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_popularities": {
+        "neutrality": 70,
+        "fascism": 20,
+        "democratic": 5,
+        "communism": 5
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_popularities": {
+        "neutrality": 100
+      }
+    }
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_mountaineers": 1,
+    "tech_trucks": 1,
+    "basic_train": 1
+  },
+  "recruit_character": [
+    "ETH_haile_selassie",
+    "ETH_haile_selassie_gugsa",
+    "ETH_alemework_beyene",
+    "ETH_ras_imru_haile_selassie",
+    "ETH_seyoum_mengesha",
+    "ETH_desta_damtew",
+    "ETH_ras_kassa",
+    "ETH_makonnen_endelkatchew",
+    "ETH_john_robinson"
+  ],
+  "set_global_flag": "second_italo_ethiopian_war_flag",
+  "1936.05.05": {
+    "clr_global_flag": "second_italo_ethiopian_war_flag"
+  },
+  "set_convoys": 5,
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  }
+}

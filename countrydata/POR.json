@@ -1,0 +1,372 @@
+{
+  "capital": 112,
+  "oob": "POR_1936",
+  "if": [
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_naval_oob": "POR_1936_naval_mtg",
+      "else": {
+        "set_naval_oob": "POR_1936_naval_legacy"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "POR_1936_air_bba",
+      "else": {
+        "set_air_oob": "POR_1936_air_legacy",
+        "set_technology": {
+          "early_fighter": 1,
+          "early_bomber": 1,
+          "CAS1": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "early_submarine": 1,
+        "basic_submarine": 1,
+        "early_destroyer": 1,
+        "transport": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "basic_naval_mines": 1,
+        "submarine_mine_laying": 1,
+        "early_ship_hull_light": 1,
+        "basic_ship_hull_light": 1,
+        "early_ship_hull_submarine": 1,
+        "basic_ship_hull_submarine": 1,
+        "basic_battery": 1,
+        "basic_torpedo": 1,
+        "basic_depth_charges": 1,
+        "mtg_transport": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "La Resistance"
+      },
+      "add_ideas": [
+        "POR_unreliable_army",
+        "POR_unstable_republic"
+      ],
+      "set_stability": 0.6,
+      "set_war_support": 0.15,
+      "set_research_slots": 2,
+      "ENG": {
+        "add_opinion_modifier": {
+          "target": "POR",
+          "modifier": "POR_anglo_portuguese_alliance"
+        }
+      },
+      "POR": {
+        "add_opinion_modifier": {
+          "target": "ENG",
+          "modifier": "POR_anglo_portuguese_alliance"
+        }
+      },
+      "GER": {
+        "add_opinion_modifier": {
+          "target": "POR",
+          "modifier": "fascism_leanings_good"
+        }
+      },
+      "ITA": {
+        "add_opinion_modifier": {
+          "target": "POR",
+          "modifier": "fascism_leanings_good"
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "La Resistance"
+      },
+      "recruit_character": [
+        "POR_antonio_de_oliveira_salazar",
+        "POR_bento_goncalves",
+        "POR_rolao_preto",
+        "POR_jose_norton_de_matos",
+        "POR_jose_vicente_de_freitas",
+        "POR_luis_augusto_ferreira_martins",
+        "POR_raul_augusto_esteves",
+        "POR_jose_mendes_cabecadas",
+        "POR_julio_botelho_moniz",
+        "POR_humberto_delgado",
+        "POR_vieira_da_rocha",
+        "POR_manuel_ortins_torres_de_bettencourt",
+        "POR_antonio_oscar_carmona",
+        "POR_manuel_quintao_meireles",
+        "POR_jaime_afreixo",
+        "POR_americo_tomas",
+        "POR_domingos_oliveira",
+        "POR_manuel_gouveia",
+        "POR_jose_filipe_de_barros_rodrigues",
+        "POR_francisco_da_costa_gomes",
+        "POR_jose_manuel_sarmento_de_beires",
+        "POR_francisco_craveiro_lopes",
+        "POR_alvaro_cunhal",
+        "POR_francisco_da_cunha_leal",
+        "POR_bento_de_jesus_caraca",
+        "POR_jaime_cortesao",
+        "POR_alberto_monsaraz",
+        "POR_maria_lamas",
+        "POR_joao_de_azevedo_coutinho",
+        "POR_duarte_jose_pacheco",
+        "POR_manuel_goncalves_cerejeira",
+        "POR_jose_adriano_pequito_rebelo",
+        "POR_jose_hipolito_raposo",
+        "POR_joao_francisco_de_barbosa_azevedo",
+        "POR_alfredo_da_silva",
+        "POR_fernando_dos_santos_costa",
+        "POR_augusto_de_vasconcelos",
+        "POR_agostinho_lourenco"
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "La Resistance"
+        }
+      },
+      "recruit_character": [
+        "POR_antonio_de_oliveira_salazar",
+        "POR_bento_goncalves",
+        "POR_rolao_preto",
+        "POR_jose_norton_de_matos",
+        "POR_jose_vicente_de_freitas",
+        "POR_jose_manuel_sarmento_de_beires",
+        "POR_manuel_ortins_torres_de_bettencourt",
+        "POR_humberto_carmona",
+        "POR_lobato_guerra",
+        "POR_humberto_delgado",
+        "POR_manuel_gouveia",
+        "POR_jaime_afreixo",
+        "POR_americo_tomas",
+        "POR_manuel_quintao_meireles",
+        "POR_jose_filipe_de_barros_rodrigues",
+        "POR_jose_adriano_rebelo_pequito",
+        "POR_francisco_craveiro_lopes",
+        "POR_jaime_cortesao",
+        "POR_raul_brandao",
+        "POR_augusto_de_vasconcelos",
+        "POR_jose_hipolito_raposo"
+      ]
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "create_equipment_variant": [
+        {
+          "name": "Delfim Class",
+          "type": "ship_hull_submarine_2",
+          "name_group": "POR_SS_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_torpedo_slot": "ship_torpedo_sub_1",
+            "fixed_ship_engine_slot": "sub_ship_engine_1",
+            "rear_1_custom_slot": "empty"
+          }
+        },
+        {
+          "name": "Guadiana Class",
+          "type": "ship_hull_light_1",
+          "name_group": "POR_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "empty",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_1",
+            "fixed_ship_torpedo_slot": "ship_torpedo_1",
+            "mid_1_custom_slot": "empty",
+            "rear_1_custom_slot": "empty"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Douro Class",
+          "type": "ship_hull_light_1",
+          "name_group": "POR_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_2",
+            "fixed_ship_torpedo_slot": "ship_torpedo_1",
+            "mid_1_custom_slot": "ship_mine_layer_1",
+            "rear_1_custom_slot": "ship_depth_charge_1"
+          }
+        }
+      ]
+    }
+  ],
+  "set_research_slots": 3,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "interwar_antiair": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "basic_train": 1
+  },
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "if": [
+        {
+          "limit": {
+            "has_dlc": "La Resistance"
+          },
+          "complete_national_focus": [
+            "POR_estado_novo",
+            "POR_portuguese_legion",
+            "POR_observation_mission",
+            "POR_army_reorganization",
+            "POR_metropolitan_army",
+            "POR_corpo_do_estado_maior",
+            "POR_second_navy_reequipment",
+            "POR_a_powerful_merchant_marine",
+            "POR_merchant_marine_protection",
+            "POR_arsenal_do_alfeite",
+            "POR_continue_the_public_works",
+            "POR_instituto_superior_tecnico",
+            "POR_roads_bridges_and_dams",
+            "POR_ogme",
+            "POR_food_industries",
+            "POR_textile_industry",
+            "POR_colonial_assimilation_policy",
+            "POR_portuguese_artillery"
+          ],
+          "unlock_national_focus": [
+            "POR_support_the_spanish_nationalists",
+            "POR_send_assistance"
+          ],
+          "SPA": {
+            "add_opinion_modifier": {
+              "target": "POR",
+              "modifier": "POR_helped_in_civil_war"
+            }
+          },
+          "add_ideas": "POR_volunteers_in_the_war_nationalist",
+          "else": {
+            "complete_national_focus": [
+              "army_effort",
+              "equipment_effort",
+              "motorization_effort",
+              "aviation_effort",
+              "naval_effort",
+              "large_navy",
+              "industrial_effort",
+              "construction_effort",
+              "production_effort"
+            ]
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "Man the Guns"
+          },
+          "set_naval_oob": "POR_1939_naval_mtg",
+          "else": {
+            "set_naval_oob": "POR_1939_naval_legacy"
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "By Blood Alone"
+          },
+          "set_air_oob": "POR_1939_air_bba",
+          "else": {
+            "set_air_oob": "POR_1939_air_legacy"
+          }
+        }
+      ],
+      "oob": "POR_1939",
+      "set_technology": {
+        "interwar_artillery": 1,
+        "infantry_weapons2": 1,
+        "support_weapons": 1,
+        "air_superiority": 1,
+        "trench_warfare": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "submarine_operations": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "computing_machine": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "synth_oil_experiments": 1,
+        "fuel_silos": 1,
+        "oil_processing": 1,
+        "improved_oil_processing": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "neutrality",
+        "last_election": "1938.10.30",
+        "election_frequency": 48,
+        "elections_allowed": false
+      },
+      "set_popularities": {
+        "neutrality": 100
+      }
+    }
+  ],
+  "set_convoys": [
+    50,
+    100
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1933.3.5",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 10,
+    "communism": 10,
+    "neutrality": 60,
+    "democratic": 20
+  },
+  "set_stability": 0.75
+}

@@ -1,0 +1,170 @@
+{
+  "capital": 800,
+  "set_research_slots": 2,
+  "add_ideas": [
+    "limited_conscription"
+  ],
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_mountaineers": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "interwar_antiair": 1
+  },
+  "if": [
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_technology": {
+        "early_fighter": 1,
+        "CAS1": 1
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "early_submarine": 1,
+        "early_destroyer": 1,
+        "early_light_cruiser": 1,
+        "early_battleship": 1,
+        "early_battlecruiser": 1,
+        "transport": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "basic_naval_mines": 1,
+        "submarine_mine_laying": 1,
+        "early_ship_hull_light": 1,
+        "basic_ship_hull_light": 1,
+        "early_ship_hull_submarine": 1,
+        "basic_ship_hull_submarine": 1,
+        "early_ship_hull_cruiser": 1,
+        "early_ship_hull_heavy": 1,
+        "basic_battery": 11,
+        "basic_torpedo": 1,
+        "coastal_defense_ships": 1,
+        "mtg_transport": 1
+      }
+    }
+  ],
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "large_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "interwar_artillery": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "air_superiority": 1,
+      "mass_assault": 1,
+      "pocket_defence": 1,
+      "defence_in_depth": 1,
+      "fleet_in_being": 1,
+      "convoy_sailing": 1,
+      "submarine_operations": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "synth_oil_experiments": 1,
+      "fuel_silos": 1,
+      "oil_processing": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    },
+    "if": [
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "By Blood Alone"
+          }
+        },
+        "set_technology": {
+          "fighter1": 1,
+          "early_bomber": 1,
+          "tactical_bomber1": 1
+        }
+      },
+      {
+        "limit": {
+          "not": {
+            "has_dlc": "Man the Guns"
+          }
+        },
+        "set_technology": {
+          "basic_submarine": 1
+        }
+      },
+      {
+        "limit": {
+          "has_dlc": "Man the Guns"
+        },
+        "set_technology": []
+      }
+    ]
+  },
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1935.2.8",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 40,
+    "communism": 25,
+    "fascism": 30,
+    "neutrality": 5
+  },
+  "recruit_character": [
+    "KUR_qazi_muhamad",
+    "KUR_mahmud_barzanji",
+    "KUR_ishan_nuri",
+    "KUR_seyid_riza",
+    "KUR_ferzende_bege_haseni",
+    "KUR_haji_baba",
+    "KUR_ahmed_barzani",
+    "KUR_ar",
+    "KUR_nccr",
+    "KUR_mt",
+    "KUR_ai2",
+    "KUR_ncs",
+    "KUR_nuri_dersimi",
+    "KUR_ihsan_nuri",
+    "KUR_acr",
+    "KUR_aa2",
+    "KUR_acgs",
+    "KUR_ncm",
+    "KUR_nt",
+    "KUR_acas",
+    "KUR_awt",
+    "KUR_kamuran_ali_bedirxan",
+    "KUR_aco2"
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "capital": 4,
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "set_oob": "AUS_ww_1936",
+      "ELSE_IF": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        },
+        "set_oob": "AUS_1936"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "AUS_set_austrofascism_defaults": true,
+      "AUS_set_monarchy_restored_defauts": true,
+      "AUS_set_farr_defaults": true,
+      "AUS_set_doth_defalts": true,
+      "AUS_set_aggression_defaults": true,
+      "AUS_set_austromarxism_defaults": true,
+      "AUS_set_peoples_army_defaults": true,
+      "AUS_set_empire_restored_defaults": true,
+      "AUS_set_airforce_defaults": true,
+      "AUS_set_army_defaults": true,
+      "AUS_set_army_monarcy_defaults": true,
+      "AUS_set_navy_defaults": true,
+      "AUS_set_compensation_for_guarantee_defaults": true,
+      "add_ideas": [
+        "AUS_widespread_unemployment",
+        "AUS_phonix_insurance",
+        "AUS_recovering_from_the_depression"
+      ],
+      "add_timed_idea": {
+        "idea": "AUS_treaty_of_saint_germain_en_laye",
+        "days": 1657
+      },
+      "add_dynamic_modifier": {
+        "modifier": "AUS_austrofascism"
+      },
+      "add_opinion_modifier": {
+        "target": "GER",
+        "modifier": "AUS_austrofascism_opm"
+      },
+      "country_lock_all_division_template": {
+        "is_locked": true,
+        "desc": "AUS_cannot_train_due_to_treaty_of_saint_germain_en_laye"
+      },
+      "recruit_character": [
+        "AUS_kurt_schuschnigg",
+        "AUS_karl_renner",
+        "AUS_arthur_seyss-inquart",
+        "AUS_alfred_klahr",
+        "AUS_ernst_rudiger_starhemberg",
+        "AUS_johann_koplenig",
+        "AUS_edmund_glaise_horstenau",
+        "AUS_johann_hiedler",
+        "AUS_vinzenz_schumy",
+        "AUS_wilhelm_miklas",
+        "AUS_franz_winkler",
+        "AUS_ludwig_von_mises",
+        "AUS_heimito_von_doderer",
+        "AUS_hans_pertner",
+        "AUS_johannes_of_liechtenstein",
+        "AUS_alois_of_liechtenstein",
+        "AUS_heinrich_maier",
+        "AUS_leopold_waber",
+        "AUS_viktor_kienbock",
+        "AUS_karl_polheim",
+        "AUS_marianne_pollak",
+        "AUS_bruno_kreisky",
+        "AUS_theodor_innitzer",
+        "AUS_elizabet_von_gutmann",
+        "AUS_malke_schorr",
+        "AUS_franz_koritschoner",
+        "AUS_adolf_scharf",
+        "AUS_adolf_hoch",
+        "AUS_otto_bauer",
+        "AUS_alois_schonburg_hartenstein",
+        "AUS_julius_raab",
+        "AUS_leopold_figl",
+        "AUS_ernst_kaltenbrunner",
+        "AUS_maximilian_ronge",
+        "AUS_egon_schonhof",
+        "AUS_friedrich_mandl",
+        "AUS_karl_eglseer",
+        "AUS_friedrich_materna",
+        "AUS_emil_liebitzky",
+        "AUS_ludwig_von_eimannsberger",
+        "AUS_alfred_ritter_von_hubicki",
+        "AUS_valentin_feuerstein",
+        "AUS_ernst_hammer",
+        "AUS_eduard_barger",
+        "AUS_mauritz_von_wiktorin",
+        "AUS_curt_von_jesser",
+        "AUS_anton_kienbauer",
+        "AUS_julius_deutsch",
+        "AUS_alfred_jansa",
+        "AUS_wilhelm_gebauer",
+        "AUS_theodor_korner",
+        "AUS_arthur_von_pongracz",
+        "AUS_gottfried_freiherr_von_banfeld",
+        "AUS_josef_brunner",
+        "AUS_alexander_lohr",
+        "AUS_julius_yllam",
+        "AUS_wilhelm_zehner",
+        "AUS_otto_schobel",
+        "AUS_viktor_seebauer",
+        "AUS_lothar_rendulic",
+        "AUS_franz_bohme",
+        "AUS_eugen_beyer",
+        "AUS_richard_steidle",
+        "AUS_godwin_von_brumowski",
+        "AUS_johann_jacob_reverta",
+        "AUS_carl_heinz_birnbacher",
+        "AUS_franz_von_keil",
+        "AUS_herbert_wagner",
+        "AUS_eugen_sanger",
+        "AUS_hedy_lamarr",
+        "AUS_egon_schweidler",
+        "AUS_paul_eisler"
+      ],
+      "create_operative_leader": [
+        {
+          "name": "AUS_erwin_von_lahousen",
+          "bypass_recruitment": false,
+          "available_to_spy_master": true,
+          "gfx": "GFX_portrait_AUS_erwin_von_lahousen",
+          "traits": [
+            "operative_double_agent",
+            "operative_commando"
+          ],
+          "nationalities": [
+            "AUS",
+            "GER"
+          ]
+        },
+        {
+          "name": "AUS_wilhelm_ergert",
+          "bypass_recruitment": false,
+          "available_to_spy_master": true,
+          "gfx": "GFX_portrait_AUS_wilhelm_ergert",
+          "traits": [
+            "operative_double_agent",
+            "operative_linguist",
+            "operative_safe_cracker"
+          ],
+          "nationalities": [
+            "AUS",
+            "GER",
+            "YUG"
+          ]
+        }
+      ],
+      "ELSE_IF": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        },
+        "recruit_character": [
+          "AUS_kurt_schuschnigg",
+          "AUS_karl_renner",
+          "AUS_arthur_seyss-inquart",
+          "AUS_alfred_klahr",
+          "AUS_karl_eglseer",
+          "AUS_odilo_globocnik",
+          "AUS_alexander_lohr",
+          "AUS_paul_von_hegedus",
+          "AUS_julius_yllam",
+          "AUS_otto_meixner_von_zweienstamm",
+          "AUS_wilhelm_zehner",
+          "AUS_josef_teufl",
+          "AUS_otto_schobel",
+          "AUS_viktor_seebauer",
+          "AUS_lothar_rendulic",
+          "AUS_ernst_kaltenbrunner",
+          "AUS_eduard_freiherr",
+          "AUS_franz_bohme",
+          "AUS_eugen_beyer",
+          "AUS_julius_raab",
+          "AUS_leopold_figl",
+          "AUS_friedrich_mandl"
+        ]
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_technology": {
+        "gwtank_chassis": 1
+      },
+      "ELSE": {
+        "set_technology": {
+          "gwtank": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "La Resistance"
+      },
+      "set_technology": {
+        "armored_car1": 1
+      }
+    }
+  ],
+  "if": {
+    "limit": {
+      "has_dlc": "By Blood Alone"
+    },
+    "set_air_oob": "AUS_1936_air_bba",
+    "set_technology": {
+      "aa_lmg": 1,
+      "engines_1": 1,
+      "aircraft_construction": 1,
+      "iw_small_airframe": 1
+    },
+    "else": {
+      "set_air_oob": "AUS_1936_air_legacy",
+      "set_technology": {
+        "early_fighter": 1
+      }
+    }
+  },
+  "every_owned_state": {
+    "limit": {
+      "is_core_of": "ROOT"
+    },
+    "add_to_array": {
+      "ROOT.AUS_initial_states": "THIS"
+    }
+  },
+  "set_research_slots": 3,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_recon": 1,
+    "tech_engineers": 1,
+    "tech_support": 1,
+    "tech_mountaineers": 1,
+    "tech_trucks": 1,
+    "basic_train": 1,
+    "gw_artillery": 1
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 48,
+    "fascism": 50,
+    "democratic": 1,
+    "communism": 1
+  },
+  "set_stability": 0.5
+}

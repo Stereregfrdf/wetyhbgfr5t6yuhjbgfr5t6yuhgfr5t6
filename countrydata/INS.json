@@ -1,0 +1,140 @@
+{
+  "capital": 335,
+  "oob": "INS_1936",
+  "set_research_slots": 2,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_support": 1,
+    "tech_recon": 1,
+    "fuel_silos": 1
+  },
+  "if": [
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "By Blood Alone"
+        }
+      },
+      "set_technology": {
+        "early_fighter": 1,
+        "early_bomber": 1
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "transport": 1,
+        "early_submarine": 1,
+        "basic_destroyer": 1,
+        "early_destroyer": 1,
+        "early_light_cruiser": 1,
+        "basic_light_cruiser": 1,
+        "early_heavy_cruiser": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "mtg_transport": 1,
+        "early_ship_hull_submarine": 1,
+        "early_ship_hull_light": 1,
+        "basic_ship_hull_light": 1,
+        "early_ship_hull_cruiser": 1,
+        "basic_ship_hull_cruiser": 1,
+        "basic_battery": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "recruit_character": "INS_hein_ter_poorten"
+    }
+  ],
+  "set_convoys": 25,
+  "set_popularities": {
+    "democratic": 50,
+    "fascism": 10,
+    "communism": 20,
+    "neutrality": 20
+  },
+  "recruit_character": [
+    "INS_a_t_van_starkenborgh_stachouwer",
+    "INS_sukarno",
+    "INS_amir_sjarifuddin_harahap",
+    "INS_suharto",
+    "INS_sutan_sjahrir"
+  ],
+  "set_cosmetic_tag": "INS_HOL",
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "oob": "INS_1939",
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "interwar_artillery": 1,
+      "interwar_antiair": 1,
+      "tech_recon": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "air_superiority": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_refining": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    },
+    "if": [
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "No Step Back"
+          }
+        },
+        "set_technology": {
+          "gwtank": 1,
+          "basic_light_tank": 1
+        }
+      },
+      {
+        "limit": {
+          "has_dlc": "No Step Back"
+        },
+        "set_technology": {
+          "gwtank_chassis": 1,
+          "basic_light_tank_chassis": 1
+        }
+      }
+    ]
+  }
+}

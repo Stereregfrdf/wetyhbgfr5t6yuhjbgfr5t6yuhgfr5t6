@@ -1,0 +1,90 @@
+{
+  "capital": 319,
+  "oob": "DOM_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "gw_artillery": 1,
+    "tech_trucks": 1
+  },
+  "recruit_character": [
+    "DOM_rafael_trujillo",
+    "DOM_jacinto_gonzáles",
+    "DOM_fernando_bayo",
+    "DOM_horacio_cabral",
+    "DOM_domingo_de_los_santos_ortiz",
+    "DOM_jose_miguel_moncada",
+    "DOM_humberto_rojas",
+    "DOM_julio_ortega_frier",
+    "DOM_frank_feliz_miranda",
+    "DOM_diego_trabajo_ruiz",
+    "DOM_honoracio_yuna_robles",
+    "DOM_gerardo_espaillat",
+    "DOM_jesus_da_costa_ruiz",
+    "DOM_edgar_martinez",
+    "DOM_anibal_vallejo_sosa",
+    "DOM_manuel_pena_battle",
+    "DOM_victor_vinas_roman",
+    "DOM_elias_brache",
+    "DOM_manuel_de_jesus_troncoso",
+    "DOM_jacinto_bienvenido_peynado"
+  ],
+  "set_country_flag": "monroe_doctrine",
+  "set_war_support": 0.1,
+  "set_convoys": 5,
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "naval_effort",
+        "flexible_navy",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "oob": "DOM_1939",
+      "set_technology": {
+        "infantry_weapons1": 1,
+        "air_superiority": 1,
+        "mass_assault": 1,
+        "pocket_defence": 1,
+        "defence_in_depth": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "fuel_silos": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "recruit_character": "DOM_jacinto_peynado",
+      "promote_character": "DOM_jacinto_peynado",
+      "retire_character": "DOM_rafael_trujillo"
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "fascism",
+    "last_election": "1934.5.16",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "fascism": 100
+  }
+}

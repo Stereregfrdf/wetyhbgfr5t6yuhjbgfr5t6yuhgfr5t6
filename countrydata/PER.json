@@ -1,0 +1,453 @@
+{
+  "capital": 266,
+  "oob": "PER_1936",
+  "if": {
+    "limit": {
+      "has_dlc": "By Blood Alone"
+    },
+    "set_air_oob": "PER_1936_air_bba",
+    "else": {
+      "set_air_oob": "PER_1936_air_legacy",
+      "set_technology": {
+        "early_fighter": 1,
+        "CAS1": 1
+      }
+    }
+  },
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "set_technology": {
+        "infantry_weapons": 1,
+        "infantry_weapons1": 1,
+        "tech_trucks": 1,
+        "tech_support": 1,
+        "gw_artillery": 1,
+        "tech_military_police": 1,
+        "tech_engineers": 1
+      },
+      "ELSE": {
+        "set_technology": {
+          "infantry_weapons": 1,
+          "infantry_weapons1": 1,
+          "tech_trucks": 1,
+          "tech_support": 1,
+          "gw_artillery": 1
+        }
+      },
+      "set_party_name": {
+        "ideology": "fascism",
+        "name": "PER_ultra_nationalists",
+        "long_name": "PER_ultra_nationalists_long"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "add_ideas": [
+        "PER_anglo_iranian_oil_ns",
+        "PER_rural_feudalism_ns",
+        "PER_islamic_traditions_ns",
+        "PER_azerbaijan_resistance_idea",
+        "PER_kurdistan_resistance_idea"
+      ],
+      "recruit_character": [
+        "PER_reza_shah_pahlavi",
+        "PER_mohammed_reza_pahlavi",
+        "PER_mohammad_hassan_mirza",
+        "PER_mohammad_ali_foroughi",
+        "PER_ali_dashti",
+        "PER_zia_ol_din_tabatabee",
+        "PER_mohammad_mosaddegh",
+        "PER_iraj_eskandari",
+        "PER_soleiman_eskandari",
+        "PER_ruhollah_khomeini",
+        "PER_fakhrafagh_parsa",
+        "PER_andre_godard",
+        "PER_arthur_millspaugh",
+        "PER_ardeshir_ovanessian",
+        "PER_ali_akbar_davar",
+        "PER_abdolhossein_hazhir",
+        "PER_teymur_bakhtiar",
+        "PER_ahmad_ahmadi",
+        "PER_nikolai_markov",
+        "PER_bahram_aryana",
+        "PER_gholam_ali_oveissi",
+        "PER_ahmad_amir_ahmadi",
+        "PER_fazlollah_zahedi",
+        "PER_ali_akbar_derakhshani",
+        "PER_ghulam_yahya_daneshian",
+        "PER_jafar_kavian",
+        "PER_ahmad_khan_nakhjavan",
+        "PER_gholamali_bayandor",
+        "PER_azad_hashemi",
+        "PER_abdollah_zelli",
+        "PER_abbas_darja_nawardi",
+        "PER_fawzia_faud",
+        "PER_teymourtash",
+        "PER_irandokht",
+        "PER_davud_monshizadeh",
+        "PER_hasan_arfa",
+        "PER_abol_ghasem_kashani",
+        "PER_generic_non_aligned",
+        "PER_sky_guy",
+        "PER_land_guy",
+        "PER_karim_buzarjamehri",
+        "PER_abdolsamad_kambakhsh",
+        "PER_assadollah_hosseinpoor",
+        "PER_haj_ali_razmara",
+        "PER_rokneddin_mokhtari",
+        "PER_kazem_hasibi",
+        "PER_ahmad_zirakzadeh"
+      ],
+      "ELSE_IF": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Graveyard of Empires"
+          }
+        },
+        "recruit_character": [
+          "PER_reza_shah_pahlavi",
+          "PER_soleyman_mirza_eskandari",
+          "PER_hasan_arfa",
+          "PER_dalir_pesyan",
+          "PER_sohrab_tahmasebi",
+          "PER_mir_afkhami",
+          "PER_ahmad_khan_nakhjavan",
+          "PER_reza_mizani",
+          "PER_ali_razmara",
+          "PER_hassan_majid_firooz",
+          "PER_ahmad_mira_khosravani",
+          "PER_ahmad_khan_nakhjaavan",
+          "PER_mohammed_nakhjavani",
+          "PER_abdolreza_afkhami",
+          "PER_fazlollah_zahedi",
+          "PER_mohammed_reza_pahlavi",
+          "PER_ali_akbar_deiva",
+          "PER_hossein_afkhami",
+          "PER_ali_zohayli",
+          "PER_mahmud_jam",
+          "PER_ali_khan_mansour"
+        ]
+      }
+    }
+  ],
+  "set_variable": [
+    {
+      "PER_democratic_popularity": 20
+    },
+    {
+      "PER_communism_popularity": 5
+    },
+    {
+      "PER_neutrality_popularity": 60
+    },
+    {
+      "PER_fascism_popularity": 15
+    },
+    {
+      "PER_airforce_modifier_air_doctrine_cost_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_ace_generation_chance_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_range_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_superiority_efficiency": 0
+    },
+    {
+      "PER_airforce_modifier_air_intercept_efficiency": 0
+    },
+    {
+      "PER_airforce_modifier_air_mission_xp_gain_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_agility_factor": 0
+    },
+    {
+      "PER_airforce_modifier_ground_attack_factor": 0
+    },
+    {
+      "PER_airforce_modifier_experience_gain_air": 0.2
+    },
+    {
+      "PER_army_modifier_industrial_capacity_factory_airfoce": 0
+    },
+    {
+      "PER_airforce_modifier_conscription_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_strategic_bomber_bombing_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_cas_present_factor": 0
+    },
+    {
+      "PER_airforce_modifier_air_defence_factor": 0
+    },
+    {
+      "PER_legacy_pp": 0.02
+    },
+    {
+      "PER_legacy_research": 0
+    },
+    {
+      "PER_legacy_civ": 0.05
+    },
+    {
+      "PER_legacy_stability": 0
+    },
+    {
+      "PER_legacy_consumer_goods": 0
+    },
+    {
+      "PER_legacy_industrial_capacity_factory": 0
+    },
+    {
+      "PER_legacy_infra": 0
+    },
+    {
+      "PER_legacy_factory_efficiency": 0
+    },
+    {
+      "PER_legacy_conscription": 0
+    },
+    {
+      "PER_giants_pp": 0.02
+    },
+    {
+      "PER_giants_research": 0
+    },
+    {
+      "PER_giants_civ": 0
+    },
+    {
+      "PER_giants_stability": 0.05
+    },
+    {
+      "PER_giants_consumer_goods": 0
+    },
+    {
+      "PER_giants_industrial_capacity_factory": 0
+    },
+    {
+      "PER_giants_infra": 0
+    },
+    {
+      "PER_giants_factory_efficiency": 0
+    },
+    {
+      "PER_giants_conscription": 0
+    },
+    {
+      "PER_giants_mils": 0
+    },
+    {
+      "PER_giants_training_time": 0
+    },
+    {
+      "PER_opposition_political_power_factor": -0.1
+    },
+    {
+      "PER_opposition_research_speed_factor": 0
+    },
+    {
+      "PER_opposition_stability_factor": -0.1
+    },
+    {
+      "PER_opposition_conscription_factor": -0.05
+    },
+    {
+      "PER_opposition_fascism_drift": 0.02
+    },
+    {
+      "PER_opposition_communism_drift": 0.02
+    },
+    {
+      "PER_opposition_democratic_drift": 0.02
+    },
+    {
+      "PER_army_core_defence_factor": 0
+    },
+    {
+      "PER_army_core_attack_factor": 0
+    },
+    {
+      "PER_fascist_militia_count": 4
+    },
+    {
+      "PER_sub_unit_infantry_attack_factor": 0.1
+    },
+    {
+      "PER_sub_unit_infantry_irregular_attack_factor": 0.1
+    },
+    {
+      "PER_army_defence_factor": -0.05
+    },
+    {
+      "PER_sub_unit_infantry_defence_factor": 0.1
+    },
+    {
+      "PER_sub_unit_infantry_irregular_defence_factor": 0.1
+    },
+    {
+      "PER_army_attack_factor": -0.05
+    },
+    {
+      "PER_special_units_special_forces": 0.15
+    },
+    {
+      "PER_spec_force_training": -0.15
+    },
+    {
+      "PER_technological_modifier_research_speed_factor": 0
+    },
+    {
+      "PER_technological_modifier_special_project_speed_factor": 0
+    },
+    {
+      "PER_technological_modifier_production_cost_air_facility_factor": 0
+    },
+    {
+      "PER_technological_modifier_production_cost_land_facility_factor": 0
+    },
+    {
+      "PER_technological_modifier_production_cost_naval_facility_factor": 0
+    },
+    {
+      "PER_technological_modifier_production_cost_nuclear_facility_factor": 0
+    }
+  ],
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "IF": {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "complete_national_focus": [
+        "PER_the_pahlavi_imperium",
+        "PER_stand_with_giants",
+        "PER_forced_secularization",
+        "PER_modernizing_iran",
+        "PER_restructure_army",
+        "PER_expand_imperial_guard",
+        "PER_persian_german_trade",
+        "PER_increase_military_funding",
+        "PER_rapid_industrialization",
+        "PER_tehran_power_plant",
+        "PER_increase_education_funding",
+        "PER_adult_literacy",
+        "PER_develop_cities",
+        "PER_expand_military_facilities",
+        "PER_foreign_retraining",
+        "PER_trial_fifty_three",
+        "PER_open_abadan",
+        "PER_military_high_schools"
+      ],
+      "diplomatic_relation": [
+        {
+          "country": "TUR",
+          "relation": "non_aggression_pact",
+          "active": true
+        },
+        {
+          "country": "IRQ",
+          "relation": "non_aggression_pact",
+          "active": true
+        },
+        {
+          "country": "AFG",
+          "relation": "non_aggression_pact",
+          "active": true
+        }
+      ],
+      "add_dynamic_modifier": {
+        "modifier": "SSB_saadabad_pact"
+      },
+      "ELSE": {
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "naval_effort",
+          "flexible_navy",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    },
+    "oob": "PER_1939",
+    "if": [
+      {
+        "limit": {
+          "has_dlc": "By Blood Alone"
+        },
+        "set_air_oob": "PER_1936_air_bba",
+        "else": {
+          "set_air_oob": "PER_1936_air_legacy"
+        }
+      },
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "No Step Back"
+          }
+        },
+        "set_technology": {
+          "gwtank": 1
+        }
+      }
+    ],
+    "set_technology": {
+      "tech_support": 1,
+      "tech_recon": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "gw_artillery": 1,
+      "interwar_antiair": 1,
+      "interwar_artillery": 1,
+      "air_superiority": 1,
+      "mass_assault": 1,
+      "pocket_defence": 1,
+      "defence_in_depth": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_convoys": 10,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "democratic": "PER_democratic_popularity",
+    "fascism": "PER_fascism_popularity",
+    "communism": "PER_communism_popularity",
+    "neutrality": "PER_neutrality_popularity"
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "capital": 295,
+  "set_oob": "COG_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_support": 1,
+    "tech_trucks": 1,
+    "basic_train": 1,
+    "armored_car1": 1,
+    "gw_artillery": 1,
+    "interwar_antitank": 1,
+    "tech_engineers": 1
+  },
+  "set_war_support": 0.4,
+  "set_stability": 0.35,
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "set_cosmetic_tag": "COG_belgian_congo",
+      "set_global_flag": "COG_no_jft_done",
+      "add_ideas": [
+        "COG_the_invisible_roof",
+        "COG_vast_decentralized_state_idea"
+      ],
+      "add_dynamic_modifier": {
+        "modifier": "COG_force_publique"
+      },
+      "set_variable": [
+        {
+          "BEL.COG_force_publique_army_leader_cost_factor": 1.0
+        },
+        {
+          "BEL.COG_force_publique_acclimatization_hot_climate_gain_factor": 0.15
+        },
+        {
+          "BEL.COG_force_publique_command_power_gain_mult": -0.5
+        },
+        {
+          "BEL.COG_force_publique_max_command_power": -50
+        },
+        {
+          "BEL.COG_force_publique_army_core_defence_factor": 0.05
+        },
+        {
+          "BEL.COG_force_publique_equipment_capture_factor": 0.1
+        },
+        {
+          "BEL.COG_force_publique_supply_consumption_factor": -0.05
+        },
+        {
+          "BEL.COG_force_publique_resistance_target": -0.05
+        },
+        {
+          "BEL.COG_force_publique_autonomy_gain": -0.2
+        },
+        {
+          "BEL.COG_force_publique_conscription_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_army_core_attack_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_army_attack_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_army_defence_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_conscription": 0
+        },
+        {
+          "BEL.COG_force_publique_air_training_xp_gain_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_production_speed_air_base_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_experience_loss_factor": 0
+        },
+        {
+          "BEL.COG_force_publique_army_morale_factor": 0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_political_power_factor": -0.1
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_war_support_factor": -0.05
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_buildings_factor": 0.03
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_democratic_drift": 0.01
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain_global_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_research_speed_factor": 0.01
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_consumer_goods_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_local_resources_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_stability_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_industrial_complex_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_autonomy_gain": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_trade_laws_cost_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_infrastructure_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_production_speed_supply_node_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_industrial_capacity_dockyard": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_cic_to_overlord_factor": 0.0
+        },
+        {
+          "BEL.COG_belgian_congo_colonial_dynamic_modifier_mic_to_overlord_factor": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_leader_cost_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_acclimatization_hot_climate_gain_factor": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_command_power_gain_mult": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_max_command_power": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_core_defence_factor": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_equipment_capture_factor": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_supply_consumption_factor": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_resistance_target": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_autonomy_gain": 0.0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_conscription_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_core_attack_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_attack_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_defence_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_conscription": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_air_training_xp_gain_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_production_speed_air_base_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_experience_loss_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_morale_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_experience_gain_navy": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_spotting_chance": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_experience_gain_air": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_experience_gain_army": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_recon_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_ground_attack_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_industrial_capacity_factory": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_army_org_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_non_core_manpower": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_cas_damage_reduction": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_dig_in_speed_factor": 0
+        },
+        {
+          "COG_armee_nationale_congolaise_modifier_training_time_factor": 0
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "recruit_character": [
+        "COG_pierre_ryckmans",
+        "COG_joseph_kasa_vubu",
+        "COG_cyrille_adoula",
+        "COG_justin_kokolo",
+        "COG_louis_bobozo",
+        "COG_gerard_greindl",
+        "COG_paul_ermens",
+        "COG_auguste_gilliaert",
+        "COG_emile_janssens",
+        "COG_frederic_vandewalle",
+        "COG_joseph_beernaert",
+        "COG_armand_huyghe",
+        "COG_leopold_de_koninck",
+        "COG_charles_tombeur",
+        "COG_fredrik_olsen",
+        "COG_joris_six",
+        "COG_simon_kimbangu",
+        "COG_marcel_maquet",
+        "COG_alexandre_safiannikoff",
+        "COG_robert_de_muelenaere",
+        "COG_jean_bolikango",
+        "COG_patrice_lumumba",
+        "COG_joseph_ileo",
+        "COG_isaac_kalonji",
+        "COG_pedro_vii_alfonso",
+        "COG_mbop_mabiinc_mambeky",
+        "COG_moe_poaty_iii",
+        "COG_cristophe_gbenye",
+        "RWA_yuhi_musinga",
+        "COG_eugene_jungers",
+        "COG_auguste_tilkens",
+        "BEL_albert_de_vleeschauwer"
+      ],
+      "add_ideas": "BEL_albert_de_vleeschauwer"
+    }
+  ],
+  "set_convoys": 5,
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 80,
+    "democratic": 20
+  },
+  "1939.1.1": {
+    "IF": [
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        },
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "naval_effort",
+          "flexible_navy",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      },
+      {
+        "limit": {
+          "has_dlc": "Gotterdammerung"
+        },
+        "set_oob": "COG_1939",
+        "set_politics": {
+          "ruling_party": "neutrality",
+          "last_election": "1936.1.1",
+          "election_frequency": 48,
+          "elections_allowed": false
+        },
+        "set_popularities": {
+          "neutrality": 70,
+          "democratic": 25,
+          "fascism": 0,
+          "communism": 5
+        },
+        "add_political_power": 600,
+        "add_command_power": 50,
+        "complete_national_focus": [
+          "COG_governor_general_pierre_ryckmans",
+          "CONGO_belgian_congo",
+          "CONGO_rawji_group",
+          "CONGO_the_heart_of_africa",
+          "COG_invest_in_urban_centers",
+          "COG_strengthen_the_banque_du_congo_belge",
+          "COG_cooperate_with_the_comite_special_du_katanga",
+          "COG_establish_new_sabena_air_routes",
+          "COG_closer_cooperation_with_eugene_jungers",
+          "COG_uplift_the_apostolic_vicar_of_leopoldville",
+          "COG_contract_the_empain_group",
+          "COG_promote_marcel_maquet_to_provincial_commisioner",
+          "CONGO_congo_army",
+          "CONGO_belgian_officer_corps",
+          "CONGO_ccci",
+          "CONGO_regional_specialization",
+          "COG_improve_colonial_lawmaking",
+          "CONGO_bakwanga_mine",
+          "CONGO_societe_miniere_de_bakwanga"
+        ],
+        "unlock_national_focus": [
+          "COG_allow_local_autonomy",
+          "CONGO_jungle_industry"
+        ],
+        "add_stability": 0.05,
+        "every_owned_state": {
+          "limit": {
+            "is_core_of": "ROOT",
+            "is_controlled_by": "ROOT"
+          },
+          "add_extra_state_shared_building_slots": 1
+        },
+        "add_ideas": "COG_eugene_jungers"
+      }
+    ],
+    "set_technology": {
+      "infantry_weapons1": 1,
+      "support_weapons": 1,
+      "motorised_infantry": 1,
+      "tech_recon": 1,
+      "tech_logistics_company": 1,
+      "tech_field_hospital": 1,
+      "antitank1": 1,
+      "interwar_artillery": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1,
+      "excavation1": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  }
+}

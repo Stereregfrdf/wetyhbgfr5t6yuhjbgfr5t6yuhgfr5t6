@@ -1,0 +1,184 @@
+{
+  "capital": 622,
+  "oob": "PRC_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1,
+    "mass_assault": 1
+  },
+  "set_stability": 0.6,
+  "set_war_support": 0.7,
+  "recruit_character": [
+    "PRC_mao_zedong",
+    "PRC_zhu_de",
+    "PRC_chen_yi",
+    "PRC_peng_dehuai",
+    "PRC_lin_biao",
+    "PRC_kwong_hu",
+    "PRC_luo_zhao",
+    "PRC_liang_ma",
+    "PRC_ma_jin",
+    "PRC_ziao_jingguang",
+    "PRC_nie_rongzhen",
+    "PRC_su_yu",
+    "PRC_liu_bocheng",
+    "PRC_chen_geng",
+    "PRC_gao_qiu",
+    "PRC_liang_shen",
+    "PRC_otto_braun",
+    "PRC_gao_gang",
+    "PRC_fang_zeyi",
+    "PRC_xu_xiangqian",
+    "PRC_deng_ye_peng",
+    "PRC_ye_jianying",
+    "PRC_hsia_tian",
+    "PRC_zhang_wei",
+    "PRC_zhou_enlai",
+    "PRC_liu_shaoqi",
+    "PRC_lin_bojiu",
+    "PRC_dong_biwu",
+    "PRC_he_yuandang"
+  ],
+  "save_global_event_target_as": "WTT_communist_china",
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "oob": "PRC_1939",
+    "if": {
+      "limit": {
+        "has_dlc": "Waking the Tiger"
+      },
+      "complete_national_focus": [
+        "PRC_strengthen_the_central_secretariat",
+        "PRC_land_redistribution",
+        "PRC_enforce_the_three_rules",
+        "PRC_agrarian_socialism",
+        "PRC_the_yanan_base_area",
+        "PRC_focus_on_china",
+        "PRC_infiltration",
+        "PRC_revolutionary_military_commission",
+        "PRC_literacy_programs",
+        "CHI_invite_foreign_investors",
+        "CHI_mission_to_the_soviet_union",
+        "PRC_ban_the_opium_trade",
+        "PRC_military_intelligence_department",
+        "PRC_prepare_for_war_with_japan",
+        "PRC_anti_japanese_expedition",
+        "PRC_provoke_japan",
+        "PRC_mobile_warfare"
+      ],
+      "set_research_slots": 3,
+      "add_ideas": [
+        "PRC_revolutionary_military_commission",
+        "PRC_low_popular_support_3",
+        "PRC_the_long_march_2",
+        "PRC_mobile_warfare",
+        "PRC_focus_on_china"
+      ],
+      "remove_ideas": [
+        "PRC_low_popular_support_1",
+        "PRC_the_long_march_1"
+      ],
+      "else": {
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "naval_effort",
+          "flexible_navy",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    },
+    "add_to_war": {
+      "targeted_alliance": "CHI",
+      "enemy": "JAP",
+      "hostility_reason": "asked_to_join"
+    },
+    "set_country_flag": "PRC_joined_CHI_against_JAP",
+    "remove_opinion_modifier": {
+      "target": "CHI",
+      "modifier": "hostile_status"
+    },
+    "add_state_claim": [
+      612,
+      611,
+      714,
+      717,
+      328,
+      716,
+      715,
+      610,
+      609,
+      597,
+      614,
+      525,
+      608,
+      615,
+      527
+    ],
+    "add_ideas": [
+      "partial_economic_mobilisation",
+      "service_by_requirement",
+      "closed_economy"
+    ],
+    "set_technology": {
+      "tech_mountaineers": 1,
+      "air_superiority": 1,
+      "pocket_defence": 1,
+      "defence_in_depth": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_encryption": 1,
+      "basic_decryption": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "fuel_refining": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "construction3": 1,
+      "concentrated_industry": 1,
+      "concentrated_industry2": 1,
+      "concentrated_industry3": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "communism": 100
+  },
+  "add_ideas": [
+    "closed_economy",
+    "service_by_requirement",
+    "partial_economic_mobilisation"
+  ],
+  "if": {
+    "limit": {
+      "has_dlc": "Waking the Tiger"
+    },
+    "add_ideas": [
+      "PRC_the_long_march_1",
+      "PRC_low_popular_support_3",
+      "PRC_power_struggles",
+      "PRC_red_army_weakened"
+    ]
+  },
+  "add_opinion_modifier": {
+    "target": "CHI",
+    "modifier": "hostile_status"
+  }
+}

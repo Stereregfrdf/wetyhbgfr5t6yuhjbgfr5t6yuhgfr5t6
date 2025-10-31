@@ -1,0 +1,96 @@
+{
+  "capital": 292,
+  "oob": "SAU_1936",
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1
+  },
+  "if": [
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_technology": {
+        "gwtank": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Battle for the Bosporus"
+      },
+      "set_technology": {
+        "camelry": 1
+      }
+    }
+  ],
+  "set_convoys": 5,
+  "recruit_character": [
+    "SAU_abdulaziz_ibn_saud",
+    "SAU_philip_gordon_lee",
+    "SAU_youssef_al_bishi",
+    "SAU_hamadan_al_odha",
+    "SAU_sa_ad_shaddad_al_outaibi",
+    "SAU_karim_nassar",
+    "SAU_hamed_al_sabani",
+    "SAU_saud_al_saud",
+    "SAU_ismail_ali_al_salhi",
+    "SAU_ali_muhammed_khan",
+    "SAU_faisal_al_saud",
+    "SAU_faisal_saud",
+    "SAU_gholam_wali"
+  ],
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "large_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "oob": "SAU_1939",
+    "set_technology": {
+      "tech_support": 1,
+      "tech_recon": 1,
+      "support_weapons": 1,
+      "gw_artillery": 1,
+      "air_superiority": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "neutrality": 100
+  }
+}

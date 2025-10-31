@@ -1,0 +1,94 @@
+{
+  "capital": 312,
+  "oob": "HON_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "HON_tiburcio_carías_andino",
+    "HON_lorenzo_ferrera",
+    "HON_pedro_figueroa",
+    "HON_lisandro_machado",
+    "HON_oswaldo_lopez_arellano",
+    "HON_carlos_vaupel_comeza",
+    "HON_neto_britto",
+    "HON_jose_zuniga_huete",
+    "HON_teodore_alberto",
+    "HON_rufio_villegas",
+    "HON_carlos_molina_dejonje",
+    "HON_didier_masson",
+    "HON_miguel_angel_sevilla",
+    "HON_raimundo_stochler_garcia",
+    "HON_juan_b_valladares",
+    "HON_francisco_s_tapio_toro",
+    "HON_enrique_doll_rojas",
+    "HON_gustavo_schmidt",
+    "HON_carlos_alberto_ucles",
+    "HON_roberto_michelleti_bain",
+    "HON_orlando_rodriguez_jimino",
+    "HON_abraham_williams_calderon",
+    "HON_hernan_fernandez_silva"
+  ],
+  "set_country_flag": "monroe_doctrine",
+  "set_war_support": 0.1,
+  "set_convoys": 10,
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "naval_effort",
+        "flexible_navy",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "oob": "HON_1939",
+      "set_technology": {
+        "infantry_weapons1": 1,
+        "air_superiority": 1,
+        "mass_assault": 1,
+        "pocket_defence": 1,
+        "defence_in_depth": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "fuel_silos": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1936.3.28",
+        "election_frequency": 48,
+        "elections_allowed": true
+      }
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1932.10.28",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 100
+  }
+}

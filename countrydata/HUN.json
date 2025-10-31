@@ -1,0 +1,851 @@
+{
+  "capital": 43,
+  "IF": [
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "set_oob": "HUN_wuw_1936",
+      "ELSE_IF": {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        },
+        "set_oob": "HUN_1936"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "HUN_1936_air_bba",
+      "set_technology": {
+        "iw_small_airframe": 1,
+        "engines_1": 1,
+        "early_bombs": 1,
+        "photo_reconnaisance": 1,
+        "aa_lmg": 1
+      },
+      "ELSE": {
+        "set_air_oob": "HUN_1936_air_legacy",
+        "set_technology": {
+          "early_fighter": 1,
+          "CAS1": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "mtg_transport": 1
+      },
+      "ELSE": {
+        "set_technology": {
+          "transport": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "set_party_name": {
+        "ideology": "fascism",
+        "long_name": "HUN_national_socialist_party_long",
+        "name": "HUN_national_socialist_party"
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Gotterdammerung"
+        }
+      },
+      "set_stability": 0.7,
+      "set_war_support": 0.6,
+      "ELSE": {
+        "set_stability": 0.3,
+        "set_war_support": 0.4
+      }
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_technology": {
+        "gwtank": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_technology": {
+        "gwtank_chassis": 1
+      }
+    },
+    {
+      "limit": {
+        "AND": {
+          "has_dlc": "Death or Dishonor",
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        }
+      },
+      "add_ideas": [
+        "disarmed_nation"
+      ],
+      "IF": [
+        {
+          "limit": {
+            "has_dlc": "Arms Against Tyranny"
+          },
+          "add_ideas": [
+            "HUN_treaty_of_triannon_aat"
+          ]
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Arms Against Tyranny"
+            }
+          },
+          "add_ideas": [
+            "HUN_treaty_of_triannon"
+          ]
+        }
+      ]
+    },
+    {
+      "limit": {
+        "AND": {
+          "has_dlc": [
+            "Death or Dishonor",
+            "Gotterdammerung"
+          ]
+        }
+      },
+      "add_ideas": [
+        "disarmed_nation",
+        "HUN_gombos_trade_treaty",
+        "HUN_hungarian_national_defense_association",
+        "HUN_levente_associations"
+      ],
+      "add_opinion_modifier": [
+        {
+          "target": "GER",
+          "modifier": "HUN_GER_trade_modifier"
+        },
+        {
+          "target": "POL",
+          "modifier": "HUN_POL_friendship_modifier"
+        }
+      ],
+      "GER": {
+        "add_opinion_modifier": {
+          "target": "HUN",
+          "modifier": "HUN_GER_trade_modifier"
+        }
+      },
+      "POL": {
+        "add_opinion_modifier": {
+          "target": "HUN",
+          "modifier": "HUN_POL_friendship_modifier"
+        }
+      },
+      "IF": [
+        {
+          "limit": {
+            "has_dlc": "Arms Against Tyranny"
+          },
+          "add_ideas": [
+            "HUN_treaty_of_triannon_aat_wuw"
+          ],
+          "add_relation_rule_override": {
+            "target": "GER",
+            "usage_desc": "HUN_gombos_trade_treaty_tt",
+            "can_access_market": true
+          },
+          "give_market_access": "GER"
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Arms Against Tyranny"
+            }
+          },
+          "add_ideas": [
+            "HUN_treaty_of_triannon_wuw"
+          ]
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "create_equipment_variant": [
+        {
+          "name": "Weiss WM-16 Budapest",
+          "type": "small_plane_cas_airframe_0",
+          "modules": {
+            "fixed_main_weapon_slot": "bomb_locks",
+            "engine_type_slot": "engine_1_1x",
+            "special_type_slot_1": "empty"
+          }
+        },
+        {
+          "name": "Weiss WM-10 Ölyv",
+          "type": "small_plane_airframe_0",
+          "modules": {
+            "fixed_main_weapon_slot": "light_mg_2x",
+            "engine_type_slot": "engine_1_1x",
+            "special_type_slot_1": "empty"
+          }
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "create_equipment_variant": {
+        "name": "Straussler V-4",
+        "type": "light_tank_chassis_0",
+        "parent_version": 0,
+        "obsolete": false,
+        "modules": {
+          "main_armament_slot": "tank_small_cannon",
+          "turret_type_slot": "tank_light_one_man_tank_turret",
+          "suspension_type_slot": "tank_bogie_suspension",
+          "armor_type_slot": "tank_riveted_armor",
+          "engine_type_slot": "tank_gasoline_engine",
+          "special_type_slot_1": "secondary_turret_hmg"
+        },
+        "upgrades": {
+          "tank_nsb_engine_upgrade": 0,
+          "tank_nsb_armor_upgrade": 1
+        }
+      },
+      "add_equipment_to_stockpile": {
+        "type": "light_tank_chassis_0",
+        "amount": 4,
+        "variant_name": "Straussler V-4"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "set_variable": [
+        {
+          "global.HABSBURG_economy_stability_factor": 0.05
+        },
+        {
+          "global.HABSBURG_economy_power_factor": 0.1
+        },
+        {
+          "global.HABSBURG_economy_consumer_goods_factor": 0.0
+        },
+        {
+          "global.HABSBURG_economy_research_sharing_per_country_bonus_factor": 0.0
+        },
+        {
+          "global.HABSBURG_economy_production_speed_industrial_complex_factor": 0.0
+        },
+        {
+          "global.HABSBURG_economy_trade_laws_cost_factor": 0.0
+        },
+        {
+          "global.HABSBURG_economy_economy_cost_factor": 0.0
+        },
+        {
+          "global.HABSBURG_economy_license_purchase_cost": 0.0
+        },
+        {
+          "global.HABSBURG_economy_license_production_speed": 0.0
+        },
+        {
+          "global.HABSBURG_economy_special_project_speed_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_speed_industrial_complex_factor": 0.1
+        },
+        {
+          "global.HABSBURG_industry_industrial_capacity_factory": 0.05
+        },
+        {
+          "global.HABSBURG_industry_local_resources_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_speed_rail_way_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_speed_supply_node_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_global_building_slots_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_speed_arms_factory_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_line_change_production_efficiency_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_industry_free_repair_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_industry_air_damage_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_lack_of_resource_penalty_factor": 0.0
+        },
+        {
+          "global.HABSBURG_industry_production_factory_max_efficiency_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_war_stability_factor": 0.1
+        },
+        {
+          "global.HABSBURG_army_land_doctrine_cost_factor": -0.1
+        },
+        {
+          "global.HABSBURG_army_conscription_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_experience_gain_army_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_max_command_power": 0.0
+        },
+        {
+          "global.HABSBURG_army_planning_speed": 0.0
+        },
+        {
+          "global.HABSBURG_army_army_speed_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_org_loss_when_moving": 0.0
+        },
+        {
+          "global.HABSBURG_army_supply_consumption_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_supply_node_range": 0.0
+        },
+        {
+          "global.HABSBURG_army_army_core_attack_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_army_core_defence_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_motorized_attack_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_army_armor_attack_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_fuel_gain_factor": 0.0
+        },
+        {
+          "global.HABSBURG_army_army_attack_factor": 0.0
+        },
+        {
+          "global.HABSBURG_cavalry_cavalry_attack_factor": 0.05
+        },
+        {
+          "global.HABSBURG_cavalry_cavalry_defence_factor": 0.1
+        },
+        {
+          "global.HABSBURG_army_conscription": 0.01
+        },
+        {
+          "global.HABSBURG_cavalry_breakthrough_factor": 0.0
+        }
+      ]
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Gotterdammerung"
+        }
+      },
+      "recruit_character": [
+        "HUN_miklos_horthy",
+        "HUN_matyas_rakosi",
+        "HUN_arpad_szakasits",
+        "HUN_geza_lakatos",
+        "HUN_ivan_hindy",
+        "HUN_karoly_beregfy",
+        "HUN_lajos_veress",
+        "HUN_ferenc_feketehalmyczeydner",
+        "HUN_istvan_szechenyi",
+        "HUN_francois_deak",
+        "HUN_gyorgy_jendrassik",
+        "HUN_jeno_ratz",
+        "HUN_henrik_werth",
+        "HUN_hugo_sonyi",
+        "HUN_ferenc_szombathelyi",
+        "HUN_gusztav_jany",
+        "HUN_dezso_laszlo",
+        "HUN_reszo_kastner",
+        "HUN_shvoy_kalman",
+        "HUN_sandor_magyarossy",
+        "HUN_bela_rakosi",
+        "HUN_kalman_kanya",
+        "HUN_jozsef_szell",
+        "HUN_vilmos_roder",
+        "HUN_zoltan_tildy",
+        "HUN_laszlo_rajk",
+        "HUN_kalman_daranyi",
+        "HUN_lajos_remenyi_schneller",
+        "HUN_gusztav_gratz",
+        "HUN_gyula_gombos_de_jakfa",
+        "HUN_otto_von_habsburg",
+        "HUN_franz_friedrich",
+        "HUN_franz_anton_bach"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "recruit_character": [
+        "HUN_miklos_horthy",
+        "HUN_matyas_rakosi",
+        "HUN_arpad_szakasits",
+        "HUN_geza_lakatos",
+        "HUN_ivan_hindy",
+        "HUN_karoly_beregfy",
+        "HUN_lajos_veress",
+        "HUN_ferenc_feketehalmyczeydner",
+        "HUN_gyorgy_jendrassik",
+        "HUN_jeno_ratz",
+        "HUN_henrik_werth",
+        "HUN_hugo_sonyi",
+        "HUN_ferenc_szombathelyi",
+        "HUN_gusztav_jany",
+        "HUN_dezso_laszlo",
+        "HUN_shvoy_kalman",
+        "HUN_sandor_magyarossy",
+        "HUN_kalman_kanya",
+        "HUN_jozsef_szell",
+        "HUN_vilmos_roder",
+        "HUN_zoltan_tildy",
+        "HUN_laszlo_rajk",
+        "HUN_kalman_daranyi",
+        "HUN_lajos_remenyi_schneller",
+        "HUN_gusztav_gratz",
+        "HUN_gyula_gombos_de_jakfa",
+        "HUN_otto_von_habsburg",
+        "HUN_franz_friedrich",
+        "HUN_bela_kun",
+        "HUN_joseph_august_von_habsburg",
+        "HUN_istvan_horthy",
+        "HUN_ferenc_szalasi",
+        "HUN_mihaly_karolyi",
+        "HUN_janos_zichy",
+        "HUN_carl_wilhelm",
+        "HUN_vilmos_nagy",
+        "HUN_jozsef_bajnoczy",
+        "HUN_karoly_bartha",
+        "HUN_dome_sztojay",
+        "HUN_laszlo_hary",
+        "HUN_jeno_oszkar_ruszkay",
+        "HUN_janos_voros",
+        "HUN_lajos_csatay",
+        "HUN_sandor_gyorffy_bengyel",
+        "HUN_zoltan_decleva",
+        "HUN_elemer_gorondy_novak",
+        "HUN_bela_miklos",
+        "HUN_kocsard_janky",
+        "HUN_antal_freiherr",
+        "HUN_bela_imredy",
+        "HUN_pal_teleki",
+        "HUN_ferenc_fischer",
+        "HUN_erno_gero",
+        "HUN_fidel_palffy",
+        "HUN_istvan_friedrich",
+        "HUN_magdolna_purgly",
+        "HUN_sandor_garbai",
+        "HUN_istvan_bethlen",
+        "HUN_gyula_kadar",
+        "HUN_imre_nagy",
+        "HUN_miklos_horthy_jr",
+        "HUN_pal_kiraly",
+        "HUN_janos_kadar",
+        "HUN_lennart_bernadotte",
+        "HUN_pal_pronay",
+        "HUN_imre_kemeri_nagy",
+        "HUN_jusztinian_seredi",
+        "HUN_vasyl_vyshyvanyi",
+        "HUN_jozsef_kelen",
+        "HUN_hermann_pokorny",
+        "HUN_dezso_magos",
+        "HUN_kalman_hardy",
+        "HUN_franz_anton_bach",
+        "HUN_hermann_goring",
+        "HUN_asboth_oszkar"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Gotterdammerung"
+      },
+      "add_ideas": [
+        "HUN_gyula_gombos_de_jakfa"
+      ]
+    }
+  ],
+  "set_research_slots": 3,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_support": 1,
+    "tech_recon": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "fuel_silos": 1,
+    "basic_train": 1
+  },
+  "set_variable": {
+    "HUN_academy_of_sciences_research_speed_factor": 0.03
+  },
+  "add_opinion_modifier": [
+    {
+      "target": "CZE",
+      "modifier": "BFTB_incongruous_neighbors"
+    },
+    {
+      "target": "ROM",
+      "modifier": "BFTB_incongruous_neighbors"
+    },
+    {
+      "target": "YUG",
+      "modifier": "BFTB_incongruous_neighbors"
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "neutrality",
+    "last_election": "1935.3.31",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 25,
+    "fascism": 31,
+    "neutrality": 44
+  },
+  "recruit_character": [
+    "HUN_nicholas_straussler",
+    "HUN_leo_szilard",
+    "HUN_john_von_neumann",
+    "HUN_edward_teller",
+    "HUN_laszlo_varga"
+  ],
+  "add_breakthrough_progress": [
+    {
+      "specialization": "specialization_land",
+      "value": 0.2
+    },
+    {
+      "specialization": "specialization_air",
+      "value": 0.2
+    }
+  ],
+  "1939.1.1": {
+    "IF": [
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "Gotterdammerung"
+          }
+        },
+        "set_politics": {
+          "ruling_party": "fascism",
+          "last_election": "1939.5.29",
+          "election_frequency": 48,
+          "elections_allowed": true
+        },
+        "set_popularities": {
+          "democratic": 27,
+          "fascism": 70,
+          "communism": 3
+        },
+        "IF": [
+          {
+            "limit": {
+              "has_dlc": "Arms Against Tyranny"
+            },
+            "remove_ideas": "HUN_treaty_of_triannon_aat"
+          },
+          {
+            "limit": {
+              "NOT": {
+                "has_dlc": "Arms Against Tyranny"
+              }
+            },
+            "remove_ideas": "HUN_treaty_of_triannon"
+          },
+          {
+            "limit": {
+              "has_dlc": "Death or Dishonor"
+            },
+            "complete_national_focus": [
+              "HUN_economic_intervention",
+              "HUN_secret_rearmament",
+              "HUN_war_games",
+              "HUN_theoretical_air_efforts",
+              "HUN_trade_deal_with_germany",
+              "HUN_joint_aluminum_mining_company",
+              "HUN_reaffirm_territorial_claims",
+              "HUN_announce_the_gyor_program",
+              "HUN_civilian_industry",
+              "HUN_reintegrate_the_railroads",
+              "HUN_invite_foreign_investors",
+              "HUN_bled_agreement",
+              "HUN_army_maneuvers",
+              "HUN_establish_the_air_force",
+              "HUN_demand_southern_slovakia",
+              "HUN_mobile_focus",
+              "HUN_license_foreign_designs"
+            ],
+            "unlock_national_focus": [
+              "HUN_renounce_the_treaty_of_trianon",
+              "HUN_strengthen_fascists"
+            ],
+            "add_ideas": [
+              [
+                "limited_conscription",
+                "HUN_treaty_of_triannon_3"
+              ],
+              "HUN_strengthen_fascists"
+            ]
+          }
+        ],
+        "add_political_power": 1198,
+        "add_command_power": 100
+      },
+      {
+        "limit": {
+          "has_dlc": "Gotterdammerung"
+        },
+        "set_politics": {
+          "ruling_party": "neutrality",
+          "last_election": "1935.3.31",
+          "election_frequency": 48,
+          "elections_allowed": false
+        },
+        "set_popularities": {
+          "neutrality": 74,
+          "democratic": 2,
+          "fascism": 24,
+          "communism": 0
+        },
+        "IF": [
+          {
+            "limit": {
+              "has_dlc": "Arms Against Tyranny"
+            },
+            "remove_ideas": "HUN_treaty_of_triannon_aat_wuw"
+          },
+          {
+            "limit": {
+              "NOT": {
+                "has_dlc": "Arms Against Tyranny"
+              }
+            },
+            "remove_ideas": "HUN_treaty_of_triannon_wuw"
+          }
+        ],
+        "add_political_power": 1100,
+        "add_command_power": 100,
+        "swap_ideas": [
+          {
+            "remove_idea": "HUN_levente_associations",
+            "add_idea": "HUN_levente_associations_act_of_defense_and_secret_rearmament"
+          },
+          {
+            "remove_idea": "HUN_hungarian_national_defense_association",
+            "add_idea": "HUN_hungarian_national_defense_association_horthyist"
+          }
+        ],
+        "remove_ideas": [
+          "HUN_gyula_gombos_de_jakfa"
+        ],
+        "retire_character": "HUN_gyula_gombos_de_jakfa",
+        "add_ideas": [
+          [
+            "HUN_pal_teleki"
+          ],
+          [
+            "partial_economic_mobilisation",
+            "volunteer_only"
+          ],
+          "HUN_secret_rearmament"
+        ],
+        "hidden_effect": {
+          "set_country_flag": [
+            "HUN_gombos_has_died_flag",
+            "HUN_horthy_aligned_the_move_flag"
+          ]
+        },
+        "complete_national_focus": [
+          "wuw_HUN_continue_the_regency",
+          "wuw_HUN_strengthen_horthys_reign",
+          "wuw_HUN_economic_intervention",
+          "wuw_HUN_reintigrate_the_imperial_railroads",
+          "wuw_HUN_hold_war_games",
+          "wuw_HUN_expand_the_ganz_muvek",
+          "wuw_HUN_pass_statute_xix",
+          "wuw_HUN_undercover_air_maneuvers",
+          "wuw_HUN_spur_on_the_trianon_trauma",
+          "wuw_HUN_promote_increased_urbanization",
+          "wuw_HUN_absolute_rule_of_the_national_unity_party",
+          "wuw_HUN_reestablish_the_rongyos_garda",
+          "wuw_HUN_the_hungarian_life_and_renewal_party",
+          "wuw_HUN_make_the_magyar_legiero_known",
+          "wuw_HUN_act_of_defense",
+          "wuw_HUN_initiate_army_maneuvers",
+          "wuw_HUN_form_the_gyorshadtest",
+          "wuw_HUN_invest_in_ludovica_academy"
+        ],
+        "unlock_national_focus": [
+          "wuw_HUN_secret_rearmament",
+          "wuw_HUN_outlaw_the_party_of_national_will",
+          "wuw_HUN_restrict_voting_rights",
+          "wuw_HUN_negotiate_the_restrictions",
+          "wuw_HUN_announce_the_gyor_program",
+          "wuw_HUN_renounce_the_treaty_of_trianon"
+        ],
+        "add_stability": 0.05,
+        "add_war_support": 0.05
+      },
+      {
+        "limit": {
+          "has_dlc": "La Resistance"
+        },
+        "set_technology": {
+          "armored_car1": 1
+        },
+        "create_intelligence_agency": true
+      },
+      {
+        "limit": {
+          "has_dlc": "By Blood Alone"
+        },
+        "set_air_oob": "HUN_1939_air_bba",
+        "set_technology": {
+          "iw_small_airframe": 1,
+          "basic_small_airframe": 1,
+          "aircraft_construction": 1,
+          "engines_2": 1,
+          "engines_1": 1,
+          "early_bombs": 1,
+          "photo_reconnaisance": 1,
+          "aa_lmg": 1
+        },
+        "ELSE": {
+          "set_air_oob": "HUN_1939_air_legacy",
+          "set_technology": {
+            "fighter1": 1,
+            "early_bomber": 1,
+            "tactical_bomber1": 1,
+            "CAS1": 1
+          }
+        }
+      },
+      {
+        "limit": {
+          "NOT": {
+            "has_dlc": "No Step Back"
+          }
+        },
+        "set_technology": {
+          "basic_light_tank": 1,
+          "gwtank": 1
+        },
+        "set_oob": "HUN_1939"
+      },
+      {
+        "limit": {
+          "has_dlc": "No Step Back"
+        },
+        "set_technology": {
+          "gwtank_chassis": 1,
+          "basic_light_tank_chassis": 1
+        },
+        "create_equipment_variant": {
+          "name": "Toldi 38M",
+          "type": "light_tank_chassis_1",
+          "parent_version": 0,
+          "modules": {
+            "main_armament_slot": "tank_small_cannon",
+            "turret_type_slot": "tank_light_two_man_tank_turret",
+            "suspension_type_slot": "tank_torsion_bar_suspension",
+            "armor_type_slot": "tank_riveted_armor",
+            "engine_type_slot": "tank_diesel_engine"
+          },
+          "upgrades": {
+            "tank_nsb_engine_upgrade": 3,
+            "tank_nsb_armor_upgrade": 2
+          },
+          "icon": "GFX_generic_light_BAA_camo"
+        },
+        "set_oob": "HUN_1939_nsb"
+      }
+    ],
+    "set_technology": {
+      "infantry_weapons": 1,
+      "infantry_weapons1": 1,
+      "tech_support": 1,
+      "tech_recon": 1,
+      "tech_trucks": 1,
+      "gw_artillery": 1,
+      "fuel_silos": 1,
+      "basic_train": 1,
+      "interwar_artillery": 1,
+      "interwar_antitank": 1,
+      "interwar_antiair": 1,
+      "tech_engineers": 1,
+      "tech_mountaineers": 1,
+      "paratroopers": 1,
+      "motorised_infantry": 1,
+      "infantry_weapons2": 1,
+      "support_weapons": 1,
+      "tech_logistics_company": 1,
+      "tech_signal_company": 1,
+      "tech_maintenance_company": 1,
+      "tech_field_hospital": 1,
+      "air_superiority": 1,
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "convoy_sailing": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "computing_machine": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1,
+      "fuel_refining": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  }
+}

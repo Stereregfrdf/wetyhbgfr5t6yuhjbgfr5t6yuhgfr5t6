@@ -1,0 +1,90 @@
+{
+  "capital": 298,
+  "oob": "LIB_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "set_convoys": 10,
+  "recruit_character": [
+    "LIB_edgar_cailloux",
+    "LIB_andre_fields",
+    "LIB_james_brooks",
+    "LIB_won_loy_chan",
+    "LIB_benton_stukes",
+    "LIB_reginald_brandon",
+    "LIB_aaron_pinn",
+    "LIB_john__r_fox",
+    "LIB_samuel_nell",
+    "LIB_joseph_smith",
+    "LIB_stewart_holland",
+    "LIB_benjamin_o_davis",
+    "LIB_george_remond",
+    "LIB_iver_virgin"
+  ],
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "naval_effort",
+        "flexible_navy",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "oob": "LIB_1939",
+      "set_technology": {
+        "air_superiority": 1,
+        "mass_assault": 1,
+        "pocket_defence": 1,
+        "defence_in_depth": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "convoy_sailing": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "fuel_silos": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1939.1.1",
+        "election_frequency": 48,
+        "elections_allowed": true
+      }
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1931.1.1",
+    "election_frequency": 96,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 100
+  },
+  "create_country_leader": {
+    "name": "Edwin Barclay",
+    "desc": "POLITICS_EDWIN_BARCLAY_DESC",
+    "picture": "GFX_portrait_lib_edwin_barclay",
+    "expire": "1965.1.1",
+    "ideology": "conservatism",
+    "traits": []
+  }
+}

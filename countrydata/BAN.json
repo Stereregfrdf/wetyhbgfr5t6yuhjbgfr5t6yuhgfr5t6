@@ -1,0 +1,102 @@
+{
+  "capital": 430,
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "if": [
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "recruit_character": "BAN_a_k_fazlul_huq"
+    },
+    {
+      "limit": {
+        "has_dlc": "Graveyard of Empires"
+      },
+      "recruit_character": "RAJ_huseyn_shaheed_suhrawardy"
+    }
+  ],
+  "recruit_character": [
+    "BAN_pot",
+    "BAN_aco2",
+    "BAN_mt",
+    "BAN_ar",
+    "BAN_fascist_guy",
+    "BAN_acd2",
+    "BAN_ncm",
+    "BAN_ai2",
+    "BAN_acas",
+    "BAN_democratic_guy",
+    "BAN_aa2",
+    "BAN_awt",
+    "BAN_coi",
+    "BAN_stc",
+    "BAN_acgs",
+    "BAN_nccr",
+    "BAN_ncs",
+    "BAN_nt",
+    "BAN_communist_guy",
+    "BAN_acr"
+  ],
+  "set_convoys": 5,
+  "1939.1.1": [
+    {
+      "complete_national_focus": [
+        "army_effort",
+        "equipment_effort",
+        "motorization_effort",
+        "aviation_effort",
+        "naval_effort",
+        "flexible_navy",
+        "industrial_effort",
+        "construction_effort",
+        "production_effort"
+      ],
+      "set_technology": {
+        "grand_battle_plan": 1,
+        "trench_warfare": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "fuel_silos": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1936.1.1",
+        "election_frequency": 48,
+        "elections_allowed": true
+      },
+      "set_popularities": {
+        "democratic": 75,
+        "fascism": 1,
+        "communism": 1,
+        "neutrality": 23
+      }
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 75,
+    "fascism": 1,
+    "communism": 1,
+    "neutrality": 23
+  }
+}

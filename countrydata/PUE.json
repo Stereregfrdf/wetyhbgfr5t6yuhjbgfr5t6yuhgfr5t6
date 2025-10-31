@@ -1,0 +1,72 @@
+{
+  "capital": 686,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "tech_trucks": 1
+  },
+  "set_convoys": 5,
+  "recruit_character": [
+    "PUE_awt",
+    "PUE_acd2",
+    "PUE_nt",
+    "PUE_aco2",
+    "PUE_acas",
+    "PUE_acr",
+    "PUE_mt",
+    "PUE_stc",
+    "PUE_aa2",
+    "PUE_ncm",
+    "PUE_communist_guy",
+    "PUE_ncs",
+    "PUE_pot",
+    "PUE_nccr",
+    "PUE_fascist_guy",
+    "PUE_coi",
+    "PUE_ai2",
+    "PUE_democratic_guy",
+    "PUE_ar",
+    "PUE_acgs"
+  ],
+  "1939.1.1": {
+    "complete_national_focus": [
+      "army_effort",
+      "equipment_effort",
+      "motorization_effort",
+      "aviation_effort",
+      "naval_effort",
+      "flexible_navy",
+      "industrial_effort",
+      "construction_effort",
+      "production_effort"
+    ],
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 75,
+    "fascism": 1,
+    "communism": 1,
+    "neutrality": 23
+  }
+}

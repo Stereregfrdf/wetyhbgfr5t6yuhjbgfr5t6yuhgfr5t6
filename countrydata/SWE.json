@@ -1,0 +1,852 @@
+{
+  "capital": 141,
+  "oob": "SWE_1936",
+  "if": [
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_naval_oob": "SWE_1936_naval_mtg",
+      "else": {
+        "set_naval_oob": "SWE_1936_naval_legacy"
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "set_air_oob": "SWE_1936_air_bba",
+      "set_technology": {
+        "iw_small_airframe": 1,
+        "aa_lmg": 1,
+        "engines_1": 1,
+        "bba_early_transport_plane": 1
+      },
+      "else": {
+        "set_air_oob": "SWE_1936_air_legacy",
+        "set_technology": {
+          "CAS1": 1,
+          "early_fighter": 1,
+          "naval_bomber1": 1,
+          "cv_naval_bomber1": 1,
+          "early_bomber": 1,
+          "early_transport_plane": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Arms Against Tyranny"
+      },
+      "add_ideas": [
+        "SWE_hungershield",
+        "SWE_severe_lack_of_ammunition",
+        "SWE_gustaf_v_idea"
+      ],
+      "add_dynamic_modifier": {
+        "modifier": "SWE_folkhemmet"
+      },
+      "set_stability": 0.47,
+      "set_war_support": 0.05
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "Arms Against Tyranny"
+        }
+      },
+      "add_ideas": [
+        "en_svensk_tiger",
+        "neutrality_idea"
+      ],
+      "set_stability": 0.9,
+      "set_war_support": 0.1
+    },
+    {
+      "limit": {
+        "NOT": {
+          "has_dlc": "No Step Back"
+        }
+      },
+      "set_technology": {
+        "gwtank": 1,
+        "basic_light_tank": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "set_technology": {
+        "gwtank_chassis": 1,
+        "basic_light_tank_chassis": 1
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "set_technology": {
+        "early_submarine": 1,
+        "early_destroyer": 1,
+        "basic_destroyer": 1,
+        "early_light_cruiser": 1,
+        "early_heavy_cruiser": 1,
+        "transport": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "set_technology": {
+        "basic_naval_mines": 1,
+        "submarine_mine_laying": 1,
+        "early_ship_hull_light": 1,
+        "basic_ship_hull_light": 1,
+        "early_ship_hull_submarine": 1,
+        "basic_ship_hull_submarine": 1,
+        "early_ship_hull_cruiser": 1,
+        "basic_battery": 1,
+        "basic_cruiser_armor_scheme": 1,
+        "basic_torpedo": 1,
+        "basic_depth_charges": 1,
+        "coastal_defense_ships": 1,
+        "mtg_transport": 1,
+        "early_ship_hull_carrier": 1,
+        "early_ship_hull_heavy": 1
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "La Resistance"
+      },
+      "set_technology": {
+        "armored_car1": 1
+      }
+    },
+    {
+      "limit": {
+        "not": {
+          "has_dlc": "Man the Guns"
+        }
+      },
+      "create_equipment_variant": {
+        "name": "Draken Class",
+        "type": "submarine_1",
+        "upgrades": {
+          "ship_reliability_upgrade": 1,
+          "sub_engine_upgrade": 1,
+          "sub_stealth_upgrade": 1,
+          "sub_torpedo_upgrade": 1
+        }
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "By Blood Alone"
+      },
+      "create_equipment_variant": {
+        "name": "Svenska Jaktfalken",
+        "type": "small_plane_airframe_0",
+        "modules": {
+          "fixed_main_weapon_slot": "light_mg_2x",
+          "engine_type_slot": "engine_1_1x",
+          "special_type_slot_1": "empty"
+        },
+        "obsolete": true
+      }
+    },
+    {
+      "limit": {
+        "has_dlc": "No Step Back"
+      },
+      "create_equipment_variant": [
+        {
+          "name": "Stridsvagn m/21",
+          "type": "light_tank_chassis_0",
+          "parent_version": 0,
+          "modules": {
+            "main_armament_slot": "tank_heavy_machine_gun",
+            "turret_type_slot": "tank_light_one_man_tank_turret",
+            "suspension_type_slot": "tank_bogie_suspension",
+            "armor_type_slot": "tank_riveted_armor",
+            "engine_type_slot": "tank_gasoline_engine"
+          },
+          "upgrades": {
+            "tank_nsb_engine_upgrade": 2,
+            "tank_nsb_armor_upgrade": 1
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Stridsvagn m/31",
+          "type": "light_tank_chassis_1",
+          "parent_version": 0,
+          "modules": {
+            "main_armament_slot": "tank_small_cannon",
+            "turret_type_slot": "tank_light_two_man_tank_turret",
+            "suspension_type_slot": "tank_torsion_bar_suspension",
+            "armor_type_slot": "tank_welded_armor",
+            "engine_type_slot": "tank_gasoline_engine",
+            "special_type_slot_1": "tank_radio_1"
+          },
+          "upgrades": {
+            "tank_nsb_armor_upgrade": 2,
+            "tank_nsb_engine_upgrade": 3
+          },
+          "icon": "GFX_generic_light_AAB"
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Man the Guns"
+      },
+      "create_equipment_variant": [
+        {
+          "name": "Hajen Class",
+          "type": "ship_hull_submarine_1",
+          "name_group": "SWE_SS_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_torpedo_slot": "ship_torpedo_sub_1",
+            "fixed_ship_engine_slot": "sub_ship_engine_1",
+            "rear_1_custom_slot": "empty"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Valen Class",
+          "type": "ship_hull_submarine_1",
+          "name_group": "SWE_SS_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_torpedo_slot": "ship_torpedo_sub_1",
+            "fixed_ship_engine_slot": "sub_ship_engine_1",
+            "rear_1_custom_slot": "ship_mine_layer_sub"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Draken Class",
+          "type": "ship_hull_submarine_2",
+          "name_group": "SWE_SS_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_torpedo_slot": "ship_torpedo_sub_1",
+            "fixed_ship_engine_slot": "sub_ship_engine_1",
+            "rear_1_custom_slot": "empty"
+          }
+        },
+        {
+          "name": "Örnen Class",
+          "type": "ship_hull_light_1",
+          "name_group": "SWE_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "empty",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_1",
+            "fixed_ship_torpedo_slot": "empty",
+            "mid_1_custom_slot": "empty",
+            "rear_1_custom_slot": "empty"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Ehrensköld Class",
+          "type": "ship_hull_light_1",
+          "name_group": "SWE_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_1",
+            "fixed_ship_torpedo_slot": "ship_torpedo_1",
+            "mid_1_custom_slot": "ship_mine_layer_1",
+            "rear_1_custom_slot": "ship_depth_charge_1"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Clas Fleming Class",
+          "type": "ship_hull_light_1",
+          "name_group": "SWE_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "empty",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_1",
+            "fixed_ship_torpedo_slot": "empty",
+            "mid_1_custom_slot": "ship_mine_layer_1",
+            "rear_1_custom_slot": "ship_mine_layer_1"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Göteborg Class",
+          "type": "ship_hull_light_2",
+          "name_group": "SWE_DD_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "light_ship_engine_3",
+            "fixed_ship_torpedo_slot": "ship_torpedo_1",
+            "mid_1_custom_slot": "ship_mine_layer_1",
+            "rear_1_custom_slot": "ship_depth_charge_1"
+          }
+        },
+        {
+          "name": "Fylgia Class",
+          "type": "ship_hull_cruiser_coastal_defense_ship",
+          "name_group": "SWE_CL_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_medium_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "cruiser_ship_engine_1",
+            "fixed_ship_armor_slot": "ship_armor_cruiser_1",
+            "fixed_ship_secondaries_slot": "empty",
+            "mid_1_custom_slot": "ship_anti_air_1",
+            "mid_2_custom_slot": "empty",
+            "rear_1_custom_slot": "ship_light_medium_battery_1"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Äran Class",
+          "type": "ship_hull_cruiser_coastal_defense_ship",
+          "name_group": "SWE_CA_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_medium_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "cruiser_ship_engine_2",
+            "fixed_ship_armor_slot": "ship_armor_cruiser_2",
+            "fixed_ship_secondaries_slot": "ship_secondaries_1",
+            "mid_1_custom_slot": "empty",
+            "mid_2_custom_slot": "empty",
+            "rear_1_custom_slot": "empty"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Oscar II Class",
+          "type": "ship_hull_cruiser_coastal_defense_ship",
+          "name_group": "SWE_CA_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_medium_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "cruiser_ship_engine_1",
+            "fixed_ship_armor_slot": "ship_armor_cruiser_1",
+            "fixed_ship_secondaries_slot": "ship_secondaries_1",
+            "mid_1_custom_slot": "empty",
+            "mid_2_custom_slot": "empty",
+            "rear_1_custom_slot": "ship_medium_battery_1"
+          },
+          "obsolete": true
+        },
+        {
+          "name": "Sverige Class",
+          "type": "ship_hull_cruiser_coastal_defense_ship",
+          "name_group": "SWE_CA_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_heavy_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "cruiser_ship_engine_1",
+            "fixed_ship_armor_slot": "ship_armor_cruiser_2",
+            "fixed_ship_secondaries_slot": "ship_secondaries_1",
+            "mid_1_custom_slot": "ship_secondaries_1",
+            "mid_2_custom_slot": "empty",
+            "rear_1_custom_slot": "ship_medium_battery_1"
+          }
+        },
+        {
+          "name": "Gotland Class",
+          "type": "ship_hull_cruiser_1",
+          "name_group": "SWE_CL_HISTORICAL",
+          "parent_version": 0,
+          "modules": {
+            "fixed_ship_battery_slot": "ship_light_medium_battery_1",
+            "fixed_ship_anti_air_slot": "ship_anti_air_1",
+            "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+            "fixed_ship_radar_slot": "empty",
+            "fixed_ship_engine_slot": "cruiser_ship_engine_1",
+            "fixed_ship_armor_slot": "empty",
+            "mid_1_custom_slot": "ship_airplane_launcher_1",
+            "mid_2_custom_slot": "ship_torpedo_1",
+            "rear_1_custom_slot": "empty"
+          }
+        }
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": "Arms Against Tyranny"
+      },
+      "add_ideas": "neutrality_idea",
+      "set_variable": [
+        {
+          "hungershield_stability_threshold_1": 0.68
+        },
+        {
+          "hungershield_stability_risk_1": 0.12
+        },
+        {
+          "hungershield_stability_threshold_2": 0.3
+        },
+        {
+          "hungershield_stability_risk_2": 0.18
+        },
+        {
+          "folkhemmet_war_support": -0.25
+        },
+        {
+          "folkhemmet_stability": 0.25
+        },
+        {
+          "folkhemmet_civ": 0.2
+        },
+        {
+          "folkhemmet_infra": 0.2
+        },
+        {
+          "folkhemmet_mil": -0.2
+        },
+        {
+          "folkhemmet_dockyard": -0.2
+        },
+        {
+          "SWE_train_the_sheltered_manpower_current_cap": 8000
+        },
+        {
+          "SWE_train_the_sheltered_manpower_current_manpower": 0
+        },
+        {
+          "SWE_train_the_sheltered_manpower_cap_increase": 6000
+        },
+        {
+          "SWE_train_the_sheltered_manpower_gain_per_level_growth_base": 100
+        },
+        {
+          "SWE_train_the_sheltered_manpower_gain_per_level_growth_spread_min": 0
+        },
+        {
+          "SWE_train_the_sheltered_manpower_gain_per_level_growth_spread_max": 300
+        },
+        {
+          "SWE_cross_we_bear_org_loss_at_low_org_factor": 0
+        },
+        {
+          "SWE_cross_we_bear_org_loss_when_moving": 0
+        },
+        {
+          "SWE_cross_we_bear_org_special_forces_cap": 0
+        },
+        {
+          "SWE_cross_we_bear_coordination_bonus": 0
+        },
+        {
+          "SWE_cross_we_bear_army_morale_factor": 0
+        },
+        {
+          "SWE_cross_we_bear_conscription": 0
+        },
+        {
+          "SWE_cross_we_bear_org_loss_at_low_org_factor_increase": 0.03
+        },
+        {
+          "SWE_cross_we_bear_org_loss_when_moving_increase": -0.04
+        },
+        {
+          "SWE_cross_we_bear_org_special_forces_cap_increase": 0.01
+        },
+        {
+          "SWE_cross_we_bear_coordination_bonus_increase": 0.02
+        },
+        {
+          "SWE_cross_we_bear_army_morale_factor_increase": 0.02
+        },
+        {
+          "SWE_cross_we_bear_conscription_increase": 0.005
+        },
+        {
+          "SWE_hygenic_housing_cooldown": 0
+        },
+        {
+          "SWE_civs_built": 0
+        }
+      ],
+      "set_party_name": [
+        {
+          "ideology": "communism",
+          "name": "SWE_aat_communism_party",
+          "long_name": "SWE_aat_communism_party_long"
+        },
+        {
+          "ideology": "neutrality",
+          "name": "SWE_aat_hogern",
+          "long_name": "SWE_aat_hogern_long"
+        }
+      ],
+      "recruit_character": [
+        "SWE_axel_pehrssonbramstorp",
+        "SWE_herman_eriksson",
+        "SWE_ebba_palmstierna",
+        "SWE_christian_gunter",
+        "SWE_rickard_sandler",
+        "SWE_alva_myrdal",
+        "SWE_gunnar_myrdal",
+        "SWE_martin_ekstrom",
+        "SWE_per_edvin_skold",
+        "SWE_tage_erlander",
+        "SWE_gosta_bagge",
+        "SWE_fallen_riksdag",
+        "SWE_rikard_persson",
+        "SWE_arne_beurling",
+        "SWE_king_gustaf_v",
+        "SWE_nils_flyg",
+        "SWE_birger_furugard",
+        "SWE_karl_kilbom",
+        "SWE_sven_hedengren",
+        "SWE_sven_hedin",
+        "SWE_konrad_hallgren",
+        "SWE_ture_nerman",
+        "SWE_fredrik_strom",
+        "SWE_zeth_hoglund",
+        "SWE_carl_lindhagen",
+        "SWE_hugo_silen",
+        "SWE_ernst_linder",
+        "SWE_carl_ehrensvard",
+        "SWE_frans_severin",
+        "SWE_exiled_revolutionaries",
+        "SWE_nordic_defense_council_leader",
+        "SWE_raoul_wallenberg",
+        "SWE_natanael_beskow",
+        "SWE_olof_thornell",
+        "SWE_lise_meitner"
+      ]
+    },
+    {
+      "limit": {
+        "has_dlc": [
+          "La Resistance",
+          "Arms Against Tyranny"
+        ]
+      },
+      "create_operative_leader": {
+        "name": "Raoul Wallenberg",
+        "GFX": "GFX_portrait_SWE_raoul_wallenberg",
+        "traits": [
+          "operative_seducer",
+          "operative_infiltrator",
+          "operative_tough"
+        ],
+        "bypass_recruitment": false,
+        "available_to_spy_master": true,
+        "nationalities": [
+          "SWE",
+          "HUN"
+        ]
+      }
+    }
+  ],
+  "set_research_slots": 3,
+  "set_technology": {
+    "infantry_weapons": 1,
+    "infantry_weapons1": 1,
+    "tech_trucks": 1,
+    "gw_artillery": 1,
+    "interwar_antiair": 1,
+    "tech_recon": 1,
+    "tech_support": 1,
+    "tech_engineers": 1,
+    "basic_train": 1,
+    "interwar_antitank": 1
+  },
+  "1939.1.1": [
+    {
+      "add_political_power": 1198,
+      "add_command_power": 100,
+      "if": [
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "Arms Against Tyranny"
+            }
+          },
+          "complete_national_focus": [
+            "army_effort",
+            "equipment_effort",
+            "motorization_effort",
+            "aviation_effort",
+            "naval_effort",
+            "large_navy",
+            "industrial_effort",
+            "construction_effort",
+            "production_effort"
+          ]
+        },
+        {
+          "limit": {
+            "has_dlc": "Arms Against Tyranny"
+          },
+          "complete_national_focus": [
+            "SWE_defense_act",
+            "SWE_urbanization",
+            "SWE_hygenic_housing",
+            "SWE_radiojanst",
+            "SWE_individual_liberty_and_prosperity_for_all",
+            "SWE_paid_holidays",
+            "SWE_saltsjobaden_agreement",
+            "SWE_research_slot_1",
+            "SWE_education_reform",
+            "SWE_license_skf_ball_bearings",
+            "SWE_government_weapons_contract",
+            "SWE_husqvarna_vapenfabrik",
+            "SWE_norma_projektilfabrik",
+            "SWE_bofors_fly_swatter",
+            "SWE_form_saab",
+            "SWE_bofors_anti_tank_gun",
+            "SWE_gotaverken",
+            "SWE_refit_gotaverken_for_rapid_repairs",
+            "SWE_domestic_designs"
+          ],
+          "every_core_state": {
+            "limit": {
+              "is_fully_controlled_by": "SWE"
+            },
+            "add_dynamic_modifier": {
+              "modifier": "SWE_hygenic_housing_output_bonus"
+            }
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "Man the Guns"
+          },
+          "set_naval_oob": "SWE_1939_naval_mtg",
+          "else": {
+            "set_naval_oob": "SWE_1939_naval_legacy"
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "By Blood Alone"
+          },
+          "set_air_oob": "SWE_1939_air_bba",
+          "else": {
+            "set_air_oob": "SWE_1939_air_legacy",
+            "set_technology": {
+              "early_bomber": 1,
+              "tactical_bomber1": 1
+            }
+          }
+        },
+        {
+          "limit": {
+            "NOT": {
+              "has_dlc": "No Step Back"
+            }
+          },
+          "set_technology": {
+            "improved_light_tank": 1,
+            "basic_medium_tank": 1
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "No Step Back"
+          },
+          "set_technology": {
+            "improved_light_tank_chassis": 1,
+            "basic_medium_tank_chassis": 1
+          }
+        },
+        {
+          "limit": {
+            "not": {
+              "has_dlc": "Man the Guns"
+            }
+          },
+          "set_technology": {
+            "basic_submarine": 1,
+            "early_carrier": 1
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "Man the Guns"
+          },
+          "set_technology": {
+            "basic_ship_hull_cruiser": 1,
+            "early_ship_hull_carrier": 1
+          }
+        }
+      ],
+      "oob": "SWE_1939",
+      "set_technology": {
+        "gw_artillery": 1,
+        "interwar_artillery": 1,
+        "infantry_weapons2": 1,
+        "support_weapons": 1,
+        "air_superiority": 1,
+        "grand_battle_plan": 1,
+        "trench_warfare": 1,
+        "fleet_in_being": 1,
+        "battlefleet_concentration": 1,
+        "submarine_operations": 1,
+        "electronic_mechanical_engineering": 1,
+        "radio": 1,
+        "mechanical_computing": 1,
+        "computing_machine": 1,
+        "basic_machine_tools": 1,
+        "improved_machine_tools": 1,
+        "advanced_machine_tools": 1,
+        "synth_oil_experiments": 1,
+        "fuel_silos": 1,
+        "oil_processing": 1,
+        "improved_oil_processing": 1,
+        "construction1": 1,
+        "construction2": 1,
+        "dispersed_industry": 1,
+        "dispersed_industry2": 1
+      },
+      "complete_special_project": {
+        "project": "sp:sp_air_radar"
+      }
+    },
+    {
+      "set_politics": {
+        "ruling_party": "democratic",
+        "last_election": "1936.9.20",
+        "election_frequency": 48,
+        "elections_allowed": true
+      },
+      "set_popularities": {
+        "democratic": 85,
+        "neutrality": 10,
+        "communism": 4,
+        "fascism": 1
+      }
+    },
+    {
+      "if": [
+        {
+          "limit": {
+            "not": {
+              "has_dlc": "Man the Guns"
+            }
+          }
+        },
+        {
+          "limit": {
+            "has_dlc": "Man the Guns"
+          },
+          "create_equipment_variant": [
+            {
+              "name": "Delfinen Class",
+              "type": "ship_hull_submarine_2",
+              "name_group": "SWE_SS_HISTORICAL",
+              "parent_version": 0,
+              "modules": {
+                "fixed_ship_torpedo_slot": "ship_torpedo_sub_1",
+                "fixed_ship_engine_slot": "sub_ship_engine_1",
+                "rear_1_custom_slot": "ship_mine_layer_sub"
+              },
+              "obsolete": true
+            },
+            {
+              "name": "Sjölejonet Class",
+              "type": "ship_hull_submarine_2",
+              "name_group": "SWE_SS_HISTORICAL",
+              "parent_version": 0,
+              "modules": {
+                "fixed_ship_torpedo_slot": "ship_torpedo_sub_2",
+                "fixed_ship_engine_slot": "sub_ship_engine_2",
+                "rear_1_custom_slot": "empty"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "set_politics": {
+    "ruling_party": "democratic",
+    "last_election": "1932.9.18",
+    "election_frequency": 48,
+    "elections_allowed": true
+  },
+  "set_popularities": {
+    "democratic": 75,
+    "neutrality": 14,
+    "communism": 8,
+    "fascism": 3
+  },
+  "set_convoys": 25,
+  "recruit_character": [
+    "SWE_per_albin_hansson",
+    "SWE_sven_olov_lindholm",
+    "SWE_sven_linderot",
+    "SWE_folke_hogberg",
+    "SWE_erik_af_edholm",
+    "SWE_claes_lindstrom",
+    "SWE_per_sylvan",
+    "SWE_gosta_ehrensvard",
+    "SWE_torsten_friis",
+    "SWE_erik_palmstierna",
+    "SWE_helge_stromback",
+    "SWE_helge_jung",
+    "SWE_bengt_nordenskiold",
+    "SWE_ivar_holmquist",
+    "SWE_fabian_tamm",
+    "SWE_charles_de_champs",
+    "SWE_axel_rappe",
+    "SWE_oscar_nygren",
+    "SWE_axel_ljungdahl",
+    "SWE_archibald_douglas",
+    "SWE_ernst_wigforss",
+    "SWE_thorwald_bergquist",
+    "SWE_osten_unden"
+  ],
+  "add_equipment_to_stockpile": [
+    {
+      "type": "infantry_equipment",
+      "amount": 1500,
+      "producer": "GER"
+    },
+    {
+      "type": "infantry_equipment",
+      "amount": 500,
+      "producer": "FIN"
+    },
+    {
+      "type": "infantry_equipment",
+      "amount": 200,
+      "producer": "CZE"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "capital": 617,
+  "oob": "SIK_1936",
+  "set_technology": {
+    "infantry_weapons": 1
+  },
+  "recruit_character": [
+    "SIK_sheng_shicai",
+    "SIK_chiang_yufen",
+    "SIK_kwong_jin",
+    "SIK_luo_wei",
+    "SIK_liang_jiang",
+    "SIK_piotr_orlov",
+    "SIK_kwong_tian",
+    "SIK_yu_wei",
+    "SIK_deng_tian",
+    "SIK_xie_peng",
+    "SIK_yang_tian",
+    "SIK_cheng_fang",
+    "SIK_ma_wei",
+    "SIK_yol_bars",
+    "SIK_gao_jiang",
+    "SIK_mao_wu",
+    "SIK_sa_zhenbing",
+    "SIK_tan_ma",
+    "SIK_zhang_xiliang",
+    "SIK_habibullah_huseinov",
+    "SIK_isa_yusuf_alptekin"
+  ],
+  "if": {
+    "limit": {
+      "has_dlc": "Waking the Tiger"
+    },
+    "add_ideas": [
+      "PRC_government_corruption",
+      "CHI_ineffective_bureaucracy_warlord",
+      "CHI_warlord_state_idea"
+    ]
+  },
+  "1939.1.1": {
+    "add_political_power": 1198,
+    "add_command_power": 100,
+    "if": {
+      "limit": {
+        "has_dlc": "Waking the Tiger"
+      },
+      "CHI": {
+        "add_to_faction": "PREV"
+      },
+      "add_to_war": {
+        "targeted_alliance": "CHI",
+        "enemy": "JAP",
+        "hostility_reason": "asked_to_join"
+      },
+      "complete_national_focus": [
+        "CHI_secure_internal_politics",
+        "CHI_cooperation_with_the_communists",
+        "CHI_land_redistribution",
+        "CHI_land_value_tax",
+        "CHI_judiciary_reforms",
+        "CHI_communist_administrators",
+        "CHI_industrial_investment",
+        "CHI_public_education_reform",
+        "CHI_local_arms_production",
+        "CHI_long_term_economic_planning",
+        "CHI_ideological_education",
+        "CHI_public_works",
+        "CHI_labor_reform",
+        "CHI_rural_militias"
+      ],
+      "else": {
+        "complete_national_focus": [
+          "army_effort",
+          "equipment_effort",
+          "motorization_effort",
+          "aviation_effort",
+          "naval_effort",
+          "flexible_navy",
+          "industrial_effort",
+          "construction_effort",
+          "production_effort"
+        ]
+      }
+    },
+    "oob": "SIK_1939",
+    "set_technology": {
+      "grand_battle_plan": 1,
+      "trench_warfare": 1,
+      "fleet_in_being": 1,
+      "battlefleet_concentration": 1,
+      "electronic_mechanical_engineering": 1,
+      "radio": 1,
+      "mechanical_computing": 1,
+      "basic_machine_tools": 1,
+      "improved_machine_tools": 1,
+      "advanced_machine_tools": 1,
+      "fuel_silos": 1,
+      "construction1": 1,
+      "construction2": 1,
+      "dispersed_industry": 1,
+      "dispersed_industry2": 1
+    },
+    "complete_special_project": {
+      "project": "sp:sp_air_radar"
+    }
+  },
+  "set_politics": {
+    "ruling_party": "communism",
+    "last_election": "1936.1.1",
+    "election_frequency": 48,
+    "elections_allowed": false
+  },
+  "set_popularities": {
+    "communism": 100
+  }
+}
